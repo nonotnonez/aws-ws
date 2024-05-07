@@ -6,20 +6,12 @@ chapter : false
 pre : " <b> 1. </b> "
 ---
 
-# AWS Projects
-
 #### Overview
-Continuous Integration and Continuous Deployment (CI/CD) is a cornerstone of DevOps methodology, emphasizing automation and collaboration throughout the software development lifecycle.
 
-![0](/aws-ws/images/1/devops.png?featherlight=false&width=50pc)
+**AWS** provides a flexible and scalable platform that enables businesses to innovate and grow without the need to invest in and manage their own infrastructure. It's used by organizations of all sizes across various industries for a wide range of use cases, from startups building new applications to large enterprises migrating their IT infrastructure to the cloud.
 
-- Continuous Integration (CI):
-  - Developers regularly push code changes to a shared repository.
-  - Automated tests are run against the newly integrated code to ensure it doesn't break existing functionality.
-  - If tests fail, developers are notified immediately, and they can address issues before they become larger problems. 
-- Continuous Deployment (CD):
-  - Once code changes pass the CI phase, they're automatically deployed to production or staging environments.
-  - This process reduces manual intervention and ensures that new features or bug fixes reach users as quickly as possible.
+
+![1][1]
 
 #### Content
 
@@ -27,3 +19,5 @@ Continuous Integration and Continuous Deployment (CI/CD) is a cornerstone of Dev
 2. [Prepairation](/aws-ws/2-prepair/)
 3. [Configure](/aws-ws/3-config/)
 4. [Cleanup](/aws-ws/4-cleanup/)
+
+[1]: /aws-ws/images/1/aws.jpg?featherlight=false&width=50pc

@@ -1,10 +1,17 @@
 [
 {
 	"uri": "http://localhost:1313/aws-ws/",
-	"title": " AWS Projects ",
+	"title": " DevOps Projects ",
 	"tags": [],
 	"description": "",
-	"content": "AWS Projects DevOps is a methodology that combines software development and IT operations to create a streamlined and automated development process. To achieve this, there are several tools that DevOps teams use to automate processes, manage infrastructure, and monitor applications\nIn this workshop, we will focus in some of DevOps tools:\nDevOps tools categorized: Version Control Systems (VCS): GitHub, GitLab Continuous Integration (CI) Tools: Jenkins, GitLab Containerization and Orchestration: Docker, Kubernetes Infrastructure as Code (IaC): Terraform Monitoring and Logging Tools: Prometheus, Zabbix, Grafana, ELK Stack Content Introduction Prepairation Configuration Cleanup "
+	"content": "AWS Projects Amazon Web Services (AWS) is a comprehensive, evolving cloud computing platform provided by Amazon.com. It offers a wide range of services, including computing power, storage solutions, networking, databases, machine learning, analytics, security, and more, all delivered over the internet.\nOverview\n1- Infrastructure as a Service (IaaS): AWS provides virtual computing resources over the internet. This includes computing power (Amazon EC2), storage (Amazon S3), and networking (Amazon VPC).\n2- Platform as a Service (PaaS): AWS offers platforms for building, deploying, and managing applications without worrying about the underlying infrastructure. Examples include AWS Elastic Beanstalk for deploying web applications and AWS Lambda for serverless computing.\n3- Software as a Service (SaaS): AWS hosts various software applications accessible over the internet. Examples include Amazon WorkMail for email and Amazon Chime for video conferencing.\n4- Storage Solutions: AWS provides scalable and secure storage services such as Amazon S3 (Simple Storage Service) for object storage, Amazon EBS (Elastic Block Store) for block storage, and Amazon Glacier for long-term archival storage.\n5- Database Services: AWS offers a range of managed database services, including Amazon RDS (Relational Database Service) for relational databases like MySQL, PostgreSQL, and Amazon Aurora, Amazon DynamoDB for NoSQL databases, and Amazon Redshift for data warehousing.\n6- Compute Services: AWS provides various compute services, including Amazon EC2 (Elastic Compute Cloud) for virtual servers, AWS Lambda for serverless computing, and Amazon ECS (Elastic Container Service) for container management.\n7- Networking: AWS offers networking services like Amazon VPC (Virtual Private Cloud) for creating isolated network environments, AWS Direct Connect for dedicated network connections, and Amazon Route 53 for domain name system (DNS) management.\n8- AI and Machine Learning: AWS provides AI and machine learning services such as Amazon SageMaker for building, training, and deploying machine learning models, Amazon Rekognition for image and video analysis, and Amazon Comprehend for natural language processing.\n9- Security and Compliance: AWS offers various security and compliance services, including AWS Identity and Access Management (IAM) for managing user access, AWS Shield for DDoS protection, and AWS Inspector for security assessment.\n10- Management and Monitoring: AWS provides tools for managing and monitoring resources, such as Amazon CloudWatch for monitoring, AWS CloudFormation for infrastructure as code, and AWS Trusted Advisor for optimizing costs and performance.\n11- IoT and Edge Computing: AWS offers services for Internet of Things (IoT) and edge computing, including AWS IoT Core for connecting devices to the cloud, AWS Greengrass for running IoT applications locally, and AWS IoT Device Defender for securing IoT devices.\n12- Developer Tools: AWS provides developer tools such as AWS CodeCommit for version control, AWS CodeBuild for continuous integration, and AWS CodeDeploy for deploying applications.\nContent Introduction Prepairation Configuration Cleanup "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/",
+	"title": "Cloud Computing Essentials",
+	"tags": [],
+	"description": "",
+	"content": "Business Request The city\u0026rsquo;s web portal needs to migrate the beach wave size prediction page to AWS to improve reliability.\nLearning Objectives Articulate the characteristics of the AWS cloud computing platform. Describe the core benefits of using AWS products and services. Compare and contrast AWS cloud services to On-Premises infrastructure. Implement hosting a static web page using Amazon S3. LEARN PLAN "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/2-prepair/2.1-docker/",
@@ -25,7 +32,7 @@
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
-	"content": "AWS Projects Overview Continuous Integration and Continuous Deployment (CI/CD) is a cornerstone of DevOps methodology, emphasizing automation and collaboration throughout the software development lifecycle.\nContinuous Integration (CI): Developers regularly push code changes to a shared repository. Automated tests are run against the newly integrated code to ensure it doesn\u0026rsquo;t break existing functionality. If tests fail, developers are notified immediately, and they can address issues before they become larger problems. Continuous Deployment (CD): Once code changes pass the CI phase, they\u0026rsquo;re automatically deployed to production or staging environments. This process reduces manual intervention and ensures that new features or bug fixes reach users as quickly as possible. Content Introduction Prepairation Configure Cleanup "
+	"content": "Overview AWS provides a flexible and scalable platform that enables businesses to innovate and grow without the need to invest in and manage their own infrastructure. It\u0026rsquo;s used by organizations of all sizes across various industries for a wide range of use cases, from startups building new applications to large enterprises migrating their IT infrastructure to the cloud.\nContent Introduction Prepairation Configure Cleanup "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/3-config/3.2-cicd/3.2.1-jenkins/",
@@ -49,6 +56,13 @@
 	"content": "Updating \u0026hellip;.\n"
 },
 {
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.2-cloudfirst/",
+	"title": "Cloud First Steps",
+	"tags": [],
+	"description": "",
+	"content": "Business Request The island\u0026rsquo;s stabilization system is failing and needs increased reliability and availability for its computational modules.\nLearning Objectives Summarize AWS Infrastructure benefits. Describe AWS Regions and Availability Zones. Deploy Amazon EC2 instances into multiple Availability Zones. "
+},
+{
 	"uri": "http://localhost:1313/aws-ws/3-config/3.2-cicd/3.2.2-gitlab/",
 	"title": "Gitlab",
 	"tags": [],
@@ -63,6 +77,13 @@
 	"content": "Diagram Workshop-0001 In this lab, we will be automate deploy a Server in AWS Cloud with tools: AWS CLI, Docker Compose, Terraform. Following this link Workshop-0002 CICD is processing \u0026hellip; Following this link Contents Docker AWS Teraform Git Local "
 },
 {
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.3-computing/",
+	"title": "Computing Solutions",
+	"tags": [],
+	"description": "",
+	"content": "Business Request The school server that runs the scheduling solution needs more memory. Assist with vertically scaling their Amazon EC2 instance.\nLearning Objectives Describe Amazon EC2 instance families and instance types. Describe horizontal and vertical scaling. Recognize options for connecting to Amazon EC2 instances. "
+},
+{
 	"uri": "http://localhost:1313/aws-ws/3-config/",
 	"title": "Configuration",
 	"tags": [],
@@ -75,6 +96,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Terraform is a open-source tool used to build, modify, and version control infratrucrure\nOverview Provider(provider.tf): Enables Terrafrom to interact with cloud providers and other APIs Terraform (versions.tf): Sets version constaints for Terraform and optionally maps provides to a source address and version constaint Variables (variable.tf): Input variables define reusable values and work like function arguments in general-purpose programming languages Resource (main.tf): Resource blocks describe infrastructure objects like VPCs, subnets, route tables, and gateways Data : Data sources allow Terraform to ultilize information form resources that were defined outside of Terraform (or defined a different Terraform configuration) Output: Outputs return structured data form your configuration and work like return values in generaral-purpose programming languages Terraform.tfvars: To set lots of variables, it is more convenient to specify their values in a variable definitions file Command terraform init [options]: command initializes a working directory containing Terraform configuration files. terraform plan [options]: command creates an execution plan, which lets you preview the changes that Terraform plans to make to your infrastructure. terraform apply [options] [plan file]: command executes the actions proposed in a Terraform plan terraform destroy [options]: command is a convenient way to destroy all remote objects managed by a particular Terraform configuration. Run Terraform in containter: Run docker compose:\ndocker-compose run --rm terraform version Run configure:\nProvider (AWS): versions.tf\nterraform {\rrequired_providers {\raws = {\rsource = \u0026#34;hashicorp/aws\u0026#34;\rversion = \u0026#34;~\u0026gt; 4.16\u0026#34;\r}\r}\rrequired_version = \u0026#34;\u0026gt;= 1.2.0\u0026#34;\r} Security credential variables: variables.tf\nvariable \u0026#34;access_key\u0026#34; {\rtype = string\rsensitive = true\r}\rvariable \u0026#34;secret_key\u0026#34; {\rtype = string\rsensitive = true\r}\rvariable \u0026#34;region\u0026#34; {\rtype = string\rdefault = \u0026#34;ap-southeast-1\u0026#34;\r} Terraform init:\ndocker-compose run --rm terraform init "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.4-ceconomics/",
+	"title": "Cloud Economics",
+	"tags": [],
+	"description": "",
+	"content": "Business Request The city\u0026rsquo;s surf board shop needs a cost estimation of an architecture with variable resource usage.\nLearning Objectives Describe how pricing estimates are obtained. Use the AWS Pricing Calculator to estimate the price of an AWS architecture. "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/2-prepair/2.4-git/",
@@ -105,11 +133,74 @@
 	"content": "We are processing \u0026hellip;.\n"
 },
 {
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/",
+	"title": "Cloud Quest",
+	"tags": [],
+	"description": "",
+	"content": "CLOUD Quest - Cloud Practitioner Cloud Practitioners will build basic cloud solutions using AWS services. You will learn about AWS Cloud concepts, security concepts, common use cases, billing and pricing models and business impacts.\nLearning Objectives For each assignment, you will receive an automated account to build a new solution on the AWS console. 1 - Cloud Computing Essentials : Create Amazon EC2 instances to run the computational modules for the island stabilization system. Each instance should be placed in a different Availability Zone in same Region. 2 - Cloud First: Migrate an existing website to static website hosting on Amazon S3 to improve reliability 3 - Computing Solutions: Increate the size of an Amazon EC2 instance to provide better application performance 4 - Cloud Economics: Configure a price estimate for an architecture that uses a variable amount of Amazon EC2 instances based on peak usage time. 5 - Networking: Review and change VPC network configurations to fix a connection issue 6 - VPCs: Allow communication between application hosted in different VPCs by using VPC perring. The Marketing and Developer EC2 instances need to access the Financial Services Server in the Finance department\u0026rsquo;s VPC. 7 - Database: Improve the operational efficiency of databases by using multiple Availability Zones and a read replica. 8 - Security: Use IAM to provide work permissions to engineers by using group settings and the least privilege principle. 9 - File Systems: Deploy and maintain a file systems infratructure that is accessible form three different servers. 10 - NoSQL: Craete a database to help our video streaming team track customer viewing behaviors from metadata, such as movies watched and device type 11 - Auto-healing and Scalling App: Create and configure an Amazon EC2 Auti Scaling group that follows scheduled scaling activities to add and remove EC2 instances. 12 - Highly Available: Increase website reliability by creating a highly available architecture that spans multiple Availability Zones with load balancing and health monitoring. "
+},
+{
 	"uri": "http://localhost:1313/aws-ws/2-prepair/2.5-local/",
 	"title": "Local",
 	"tags": [],
 	"description": "",
-	"content": "Overview We will use local environment with Vagrant and VirtualBox to test best practices.\nVagrant Vagrant is an open-source tool for building and managing virtualized development environments. It helps developers create and configure reproducible and portable development environments that closely mimic production setups. Virtualbox VirtualBox is a powerful open-source virtualization software developed by Oracle Corporation. It allows users to run multiple guest operating systems (OS) simultaneously on a single physical machine. Configuration Requirement\nMachine 1: Linux-server IP: 192.168.33.100 Memory: 2048 Mb Machine 2: Jenkins-server IP: 192.168.33.110 Memory: 5120 Mb Machine 3: Monitor-server IP: 192.168.33.120 Memory: 2048 Mb Vagrantfile\n# -*- mode: ruby -*- # vi: set ft=ruby : Vagrant.configure(\u0026#34;2\u0026#34;) do |config| config.vm.box = \u0026#34;ubuntu/focal64\u0026#34; # Configuration for the first virtual machine config.vm.define \u0026#34;machine1\u0026#34; do |machine1| machine1.vm.network \u0026#34;private_network\u0026#34;, ip: \u0026#34;192.168.33.100\u0026#34; machine1.vm.hostname = \u0026#34;linux-server\u0026#34; machine1.vm.provider \u0026#34;virtualbox\u0026#34; do |vb| vb.memory = \u0026#34;2048\u0026#34; end machine1.vm.synced_folder \u0026#34;./datas\u0026#34;, \u0026#34;/vagrant_data\u0026#34; end # Configuration for the second virtual machine config.vm.define \u0026#34;machine2\u0026#34; do |machine2| machine2.vm.network \u0026#34;private_network\u0026#34;, ip: \u0026#34;192.168.33.110\u0026#34; machine2.vm.hostname = \u0026#34;jenkins-server\u0026#34; machine2.vm.provider \u0026#34;virtualbox\u0026#34; do |vb| vb.memory = \u0026#34;5120\u0026#34; end machine2.vm.synced_folder \u0026#34;./datas\u0026#34;, \u0026#34;/vagrant_data\u0026#34; end # Configuration for the third virtual machine config.vm.define \u0026#34;machine3\u0026#34; do |machine3| machine3.vm.network \u0026#34;private_network\u0026#34;, ip: \u0026#34;192.168.33.120\u0026#34; machine3.vm.hostname = \u0026#34;monitor-server\u0026#34; machine3.vm.provider \u0026#34;virtualbox\u0026#34; do |vb| vb.memory = \u0026#34;2048\u0026#34; end machine3.vm.synced_folder \u0026#34;./datas\u0026#34;, \u0026#34;/vagrant_data\u0026#34; machine3.vm.provision \u0026#34;shell\u0026#34;, inline: \u0026lt;\u0026lt;-SHELL apt-get update SHELL end end Installation\nvagrant up vagrant status vagrant ssh vagrant halt "
+	"content": "Overview We will use local environment with Vagrant and VirtualBox to test best practices.\nVagrant Vagrant is an open-source tool for building and managing virtualized development environments. It helps developers create and configure reproducible and portable development environments that closely mimic production setups. Virtualbox VirtualBox is a powerful open-source virtualization software developed by Oracle Corporation. It allows users to run multiple guest operating systems (OS) simultaneously on a single physical machine. Configuration Requirement\nMachine 1: Linux-server IP: 192.168.33.100 Memory: 2048 Mb Machine 2: Jenkins-server IP: 192.168.33.110 Memory: 5120 Mb Machine 3: Monitor-server IP: 192.168.33.120 Memory: 2048 Mb Vagrantfile Expand:\r# -*- mode: ruby -*- # vi: set ft=ruby : Vagrant.configure(\u0026#34;2\u0026#34;) do |config| config.vm.box = \u0026#34;ubuntu/focal64\u0026#34; # Configuration for the first virtual machine config.vm.define \u0026#34;machine1\u0026#34; do |machine1| machine1.vm.network \u0026#34;private_network\u0026#34;, ip: \u0026#34;192.168.33.100\u0026#34; machine1.vm.hostname = \u0026#34;linux-server\u0026#34; machine1.vm.provider \u0026#34;virtualbox\u0026#34; do |vb| vb.memory = \u0026#34;2048\u0026#34; end machine1.vm.synced_folder \u0026#34;./datas\u0026#34;, \u0026#34;/vagrant_data\u0026#34; end # Configuration for the second virtual machine config.vm.define \u0026#34;machine2\u0026#34; do |machine2| machine2.vm.network \u0026#34;private_network\u0026#34;, ip: \u0026#34;192.168.33.110\u0026#34; machine2.vm.hostname = \u0026#34;jenkins-server\u0026#34; machine2.vm.provider \u0026#34;virtualbox\u0026#34; do |vb| vb.memory = \u0026#34;5120\u0026#34; end machine2.vm.synced_folder \u0026#34;./datas\u0026#34;, \u0026#34;/vagrant_data\u0026#34; end # Configuration for the third virtual machine config.vm.define \u0026#34;machine3\u0026#34; do |machine3| machine3.vm.network \u0026#34;private_network\u0026#34;, ip: \u0026#34;192.168.33.120\u0026#34; machine3.vm.hostname = \u0026#34;monitor-server\u0026#34; machine3.vm.provider \u0026#34;virtualbox\u0026#34; do |vb| vb.memory = \u0026#34;2048\u0026#34; end machine3.vm.synced_folder \u0026#34;./datas\u0026#34;, \u0026#34;/vagrant_data\u0026#34; machine3.vm.provision \u0026#34;shell\u0026#34;, inline: \u0026lt;\u0026lt;-SHELL apt-get update SHELL end end Run\nvagrant up vagrant status vagrant ssh vagrant halt\rvagrant reload\rfor upgrade Ram, CPU\nvagrant destroy -f\rDestroy all machine\nWindows WSL \u0026amp; Vagrant Source review\nRequirements:\nWindows 10 Virtualbox WSL 2 Vagrant Vagrant plugin: vitualbox_WSL2 Install VirtualBox\nInstall WSL2: wsl -l -v\nInstall Powershell Preview\nInvoke-Expression \u0026#34;\u0026amp; { $(Invoke-Restmethod https://aka.ms/install-powershell.ps1) } -UseMSI -Preview\u0026#34; Install Vagrant (PS) # run inside WSL 2 # check https://www.vagrantup.com/downloads for more info curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add - sudo apt-add-repository \u0026#34;deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main\u0026#34; sudo apt-get update \u0026amp;\u0026amp; sudo apt-get install vagrant Update Vagrant (PS): vagrant --version choco install vagrant --version 2.4.1 Enable WSL 2 support (The Terminal on WSL2) # append those two lines into ~/.bashrc echo \u0026#39;export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS=\u0026#34;1\u0026#34;\u0026#39; \u0026gt;\u0026gt; ~/.bashrc echo \u0026#39;export PATH=\u0026#34;$PATH:/mnt/c/Program Files/Oracle/VirtualBox\u0026#34;\u0026#39; \u0026gt;\u0026gt; ~/.bashrc # now reload the ~/.bashrc file source ~/.bashrc Install virtualbox_WSL2 plugin (The Terminal on WSL2) # Install virtualbox_WSL2 plugin vagrant plugin install virtualbox_WSL2 Install and configured (The Terminal on WSL2) # Go to Windows user\u0026#39;s dir from WSL cd /mnt/c/Users/\u0026lt;my-user-name\u0026gt;/ # Create a project dir mkdir -p projects/vagrant-demo cd projects/vagrant-demo # Create a Vagrantfile using Vagrant CLI vagrant init hashicorp/bionic64 ls -l Vagrantfile # Start a VM using Vagrantfile vagrant up # Login to the VM # (password is \u0026#39;vagrant\u0026#39;) vagrant ssh # Done :) Processing\rVagrantfile Vagrantfile (WSL): # -*- mode: ruby -*- # vi: set ft=ruby : Vagrant.configure(\u0026#34;2\u0026#34;) do |config| # Machine 1 configuration config.vm.define \u0026#34;machine1\u0026#34; do |machine1| machine1.vm.box = \u0026#34;hashicorp/bionic64\u0026#34; machine1.vm.hostname = \u0026#34;machine1\u0026#34; machine1.vm.network \u0026#34;private_network\u0026#34;, ip: \u0026#34;192.168.56.101\u0026#34; machine1.vm.provider \u0026#34;virtualbox\u0026#34; do |vb| vb.memory = 1024 vb.cpus = 1 end end # Machine 2 configuration config.vm.define \u0026#34;machine2\u0026#34; do |machine2| machine2.vm.box = \u0026#34;hashicorp/bionic64\u0026#34; machine2.vm.hostname = \u0026#34;machine2\u0026#34; machine2.vm.network \u0026#34;private_network\u0026#34;, ip: \u0026#34;192.168.56.102\u0026#34; machine2.vm.provider \u0026#34;virtualbox\u0026#34; do |vb| vb.memory = 1024 vb.cpus = 1 end end end vagrant ssh machine1 password: vagrant "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.5-networking/",
+	"title": "Networking Concepts",
+	"tags": [],
+	"description": "",
+	"content": "Business Request Help the bank setup a secure networking environment which allows communication between resources and the internet.\nLearning Objectives Define key features of VPCs, subnets, internet gateways and route tables. Describe the benefits of using Amazon VPCs. State the basics of CIDR block notation and IP addressing. Explain how VPC traffic is routed and secured using gateways, network access control lists, and security groups. "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.6-vpc/",
+	"title": "Connecting VPCs",
+	"tags": [],
+	"description": "",
+	"content": "Business Request The city\u0026rsquo;s marketing team wants separate Amazon VPCs for each department that allows communication between Amazon VPCs.\nLearning Objectives Summarize how VPC peering works with Amazon VPC. Explain the steps for establishing a VPC peering connection. Create a peering connection between two Amazon VPCs. Establish a peering connection between Amazon VPCs using a specific subnet. "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.7-database/",
+	"title": "DDatabases in Practice",
+	"tags": [],
+	"description": "",
+	"content": "Business Request Improve the insurance company\u0026rsquo;s relational database operations, performance, and availability.\nLearning Objectives Review the features, benefits and database types available with Amazon RDS. Describe vertical and horizontal scaling on Amazon RDS. Use Amazon RDS read replicas to increase database performance. Implement multi-AZ deployments of Amazon RDS to increase availability. "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.8-security/",
+	"title": "SCore Security Concepts",
+	"tags": [],
+	"description": "",
+	"content": "Business Request Help improve security at the city\u0026rsquo;s stock exchange by ensuring that support engineers can only perform authorized actions.\nLearning Objectives Describe the creation process and differences between AWS IAM users, roles, and groups. Review the structure and components of AWS IAM Policies. Summarize the AWS Shared Responsibility Model and compliance programs. "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.9-efs/",
+	"title": "File Systems in the Cloud",
+	"tags": [],
+	"description": "",
+	"content": "Business Request Help the city\u0026rsquo;s pet modeling agency share file data without provisioning or managing storage.\nLearning Objectives Summarize the different storage options available on AWS. Summarize the key features and benefits of Amazon EFS. Identify business use cases for Amazon EFS. Configure Amazon EFS endpoints to access centralized storage. "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.10-nosql/",
+	"title": "First NoSQL Database",
+	"tags": [],
+	"description": "",
+	"content": "Business Request Help the island\u0026rsquo;s streaming entertainment service implement a NoSQL database to develop new features.\nLearning Objectives Summarize the different uses of common purpose-built databases. Describe the features and benefits of Amazon DynamoDB. Interact with the elements and attributes of an Amazon DynamoDB database. Set Up a NoSQL database with Amazon DynamoDB. "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.11-healscal/",
+	"title": "Auto-healing and Scaling Applications",
+	"tags": [],
+	"description": "",
+	"content": "Business Request Assist the city\u0026rsquo;s gaming cafe with implementing auto healing servers while restricting patrons to a specific provisioning capacity.\nLearning Objectives Describe the auto healing and scaling capabilities offered by Auto Scaling groups. Create an Auto Scaling group with strict resource boundaries. Configure an Auto Scaling group to respond to a time-based event. "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.12-ha/",
+	"title": "Highly Available Web Applications",
+	"tags": [],
+	"description": "",
+	"content": "Business Request Help the travel agency create a highly available web application architecture.\nLearning Objectives Describe the principles for architecting highly available applications. Summarize the benefits of using an AWS Application Load Balancer (ALB). Use Auto Scaling groups with load balancing and health monitoring. "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/categories/",
