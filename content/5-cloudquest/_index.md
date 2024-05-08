@@ -37,8 +37,8 @@ For each assignment, you will receive an automated account to build a new soluti
 
 12 - Highly Available: Increase website reliability by creating a highly available architecture that spans multiple Availability Zones with load balancing and health monitoring. ![5][12]
 
-[0]: /aws-ws/images/5-cloudquest/0.png?featherlight=false&width=40pc
-[1]: /aws-ws/images/5-cloudquest/1.png?featherlight=false&width=40pc
+[0]: /aws-ws/images/5-cloudquest/0.png?featherlight=false&width=90pc
+[1]: /aws-ws/images/5-cloudquest/1.png?featherlight=false&width=90pc
 [2]: /aws-ws/images/5-cloudquest/1.png?featherlight=false&width=90pc
 [3]: /aws-ws/images/5-cloudquest/2.png?featherlight=false&width=90pc
 [4]: /aws-ws/images/5-cloudquest/3.png?featherlight=false&width=90pc
