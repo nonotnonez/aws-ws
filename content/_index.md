@@ -40,7 +40,7 @@ chapter : false
 
 #### Content
 
-1. [Introduction](/cicd-ws/1-intro/)
-2. [Prepairation](/cicd-ws/2-prepair/)
-3. [Configuration](/cicd-ws/3-config)
-4. [Cleanup](/cicd-ws/4-cleanup/)
+1. [Introduction](/aws-ws/1-intro/)
+2. [Prepairation](/aws-ws/2-prepair/)
+3. [Configuration](/aws-ws/3-config)
+4. [Cleanup](/aws-ws/4-cleanup/)

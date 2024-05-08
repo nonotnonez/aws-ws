@@ -105,12 +105,12 @@ Step 11
 
 1. In the Bucket policy editor window, review the policy.
 
-- This policy allows public access to the S3 bucket.
-- Effect says this policy will Allow access.
-- Principal defines who has access. In this case, * represents anyone.
-- Action defines what users can do to objects in the bucket. In this case, users can only retrieve data with GetObject.
-- Resource specifies that this policy applies to only this bucket.
-- Generally, to safeguard against unintentional data exposure, we recommend strict S3 bucket permissions in production. 
+   - This policy allows public access to the S3 bucket.
+   - Effect says this policy will Allow access.
+   - Principal defines who has access. In this case, * represents anyone.
+   - Action defines what users can do to objects in the bucket. In this case, users can only retrieve data with GetObject.
+   - Resource specifies that this policy applies to only this bucket.
+   - Generally, to safeguard against unintentional data exposure, we recommend strict S3 bucket permissions in production. 
 
 2. Scroll up to the top of the page.
 3. Go to the next step.
@@ -147,14 +147,8 @@ Step 14
 
 1. For Static website hosting, choose Enable.
 2. For Hosting type, choose Host a static website.
-3. For Index document, type:
-
- index.html
-
-4. For Error document, type:
-
- error.html
-
+3. For Index document, type: **index.html**
+4. For Error document, type:  **error.html**
 5. Go to the next step.
 
 ![513][14]

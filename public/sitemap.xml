@@ -8,7 +8,9 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/2.1-docker/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/3-config/3.1-ec2/</loc>
+    <loc>http://localhost:1313/aws-ws/3-config/3.1-iac/3.1.1-ec2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/3-config/3.1-iac/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/1-intro/</loc>
   </url><url>
@@ -27,6 +29,8 @@
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.2-plan/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/3-config/3.1-iac/3.1.2-s3/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.3-computing/</loc>
   </url><url>

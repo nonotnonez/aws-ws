@@ -10,5 +10,5 @@ pre : " <b> 3. </b> "
 
 ## Content
 
-1. [IaC](3.1-ec2/)
+1. [IaC](3.1-iac/)
 2. [CICD](3.2-cicd/)
