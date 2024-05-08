@@ -2,74 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nonotnonez.github.io/aws-ws/</loc>
+    <loc>http://localhost:1313/aws-ws/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.1-compute/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/2-prepair/2.1-docker/</loc>
+    <loc>http://localhost:1313/aws-ws/2-prepair/2.1-docker/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/3-config/3.1-ec2/</loc>
+    <loc>http://localhost:1313/aws-ws/3-config/3.1-ec2/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/1-intro/</loc>
+    <loc>http://localhost:1313/aws-ws/1-intro/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/3-config/3.2-cicd/3.2.1-jenkins/</loc>
+    <loc>http://localhost:1313/aws-ws/3-config/3.2-cicd/3.2.1-jenkins/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.1-compute/5.1.1-learn/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.1-learn/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/2-prepair/2.2-aws/</loc>
+    <loc>http://localhost:1313/aws-ws/2-prepair/2.2-aws/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/3-config/3.2-cicd/</loc>
+    <loc>http://localhost:1313/aws-ws/3-config/3.2-cicd/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.2-cloudfirst/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.2-cloudfirst/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/3-config/3.2-cicd/3.2.2-gitlab/</loc>
+    <loc>http://localhost:1313/aws-ws/3-config/3.2-cicd/3.2.2-gitlab/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.1-compute/5.1.2-plan/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.2-plan/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/2-prepair/</loc>
+    <loc>http://localhost:1313/aws-ws/2-prepair/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.3-computing/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.3-computing/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/3-config/</loc>
+    <loc>http://localhost:1313/aws-ws/3-config/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.1-compute/5.1.3-practice/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.3-practice/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/2-prepair/2.3-terraform/</loc>
+    <loc>http://localhost:1313/aws-ws/2-prepair/2.3-terraform/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.4-ceconomics/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.4-ceconomics/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.1-compute/5.1.4-diy/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.4-diy/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/2-prepair/2.4-git/</loc>
+    <loc>http://localhost:1313/aws-ws/2-prepair/2.4-git/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/4-cleanup/4.1-ec2/</loc>
+    <loc>http://localhost:1313/aws-ws/4-cleanup/4.1-ec2/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/4-cleanup/</loc>
+    <loc>http://localhost:1313/aws-ws/4-cleanup/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/4-cleanup/4.2-jenkins/</loc>
+    <loc>http://localhost:1313/aws-ws/4-cleanup/4.2-jenkins/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/2-prepair/2.5-local/</loc>
+    <loc>http://localhost:1313/aws-ws/2-prepair/2.5-local/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.5-networking/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.5-networking/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.6-vpc/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.6-vpc/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.7-database/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.7-database/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.8-security/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.8-security/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.9-efs/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.9-efs/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.10-nosql/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.10-nosql/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.11-healscal/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.11-healscal/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/5-cloudquest/5.12-ha/</loc>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.12-ha/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/categories/</loc>
+    <loc>http://localhost:1313/aws-ws/categories/</loc>
   </url><url>
-    <loc>https://nonotnonez.github.io/aws-ws/tags/</loc>
+    <loc>http://localhost:1313/aws-ws/tags/</loc>
   </url>
 </urlset>

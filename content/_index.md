@@ -1,5 +1,5 @@
 ---
-title : " DevOps Projects "
+title : " AWS Projects "
 date : "`r Sys.Date()`"
 weight : 1
 chapter : false
