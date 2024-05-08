@@ -30,14 +30,14 @@ Terraform is a open-source tool used to build, modify, and version control infra
 
 #### Run Terraform in containter:
 Run docker compose: 
-```dockercompose
+```js
  docker-compose run --rm terraform version
 ```
 ![23](/aws-ws/images/2-prepair/2.3-terraform/1.png)
 Run configure:
 
 Provider (**AWS**):   **versions.tf**
-```dockercompose
+```js
  terraform {
   required_providers {
     aws = {
@@ -51,7 +51,7 @@ Provider (**AWS**):   **versions.tf**
 ```
 Security credential variables:  **variables.tf**
 
-```dockercompose
+```js
 variable "access_key" {
   type        = string
   sensitive   = true
@@ -70,7 +70,7 @@ variable "region" {
 
 
 Terraform init:
-```dockercompose
+```js
  docker-compose run --rm terraform init
 ```
-![23](/aws-ws/images/2-prepair/2.3-terraform/2.png)
+![23](/aws-ws/images/2-prepair/2.3-terraform/2.png?featherlight=false&width=50pc)

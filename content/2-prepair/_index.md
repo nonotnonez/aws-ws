@@ -6,16 +6,17 @@ chapter : false
 pre : " <b> 2. </b> "
 ---
 
-### Diagram 
-#### Workshop-0001
--   In this lab, we will be automate deploy a Server in **AWS Cloud** with tools: AWS CLI, Docker Compose, Terraform. 
-    -   [Following this link](3-config/3.1-ec2)
+#### Workshop-101
+- **Overview** :
+    -   The project focuses on automating the deployment of a server in the AWS Cloud using **AWS CLI**, **Docker Compose**, and **Terraform**. Terraform is used to define and provision the necessary infrastructure components, while Docker Compose is employed to manage the Docker containers for the server application. The AWS CLI is used for interacting with AWS services programmatically. By integrating these tools, the project aims to streamline the deployment process, reduce manual effort, and ensure consistency and scalability in the AWS environment.
+-   **Workflow** : [process link](3-config/3.1-ec2)
 
 ![2](/aws-ws/images/2/tf-ws-0001.png?featherlight=false&width=90pc)
 
-#### Workshop-0002 
--   CICD is processing ...
-    -  [Following this link](3-config/3.2-cicd)
+#### Workshop-102 
+-  **Overview** :
+   -  CICD is processing ...
+-  **Workflow** : [process link](3-config/3.2-cicd)
 
 ### Contents
 

@@ -11,7 +11,7 @@ chapter : false
 
 **Overview**
     
-![1](/aws-ws/images/1/aws1.png?featherlight=false&width=50pc)
+![1](/aws-ws/images/1/1.png?featherlight=false&width=90pc)
 
 1- **Infrastructure as a Service (IaaS)**: AWS provides virtual computing resources over the internet. This includes computing power (Amazon EC2), storage (Amazon S3), and networking (Amazon VPC).
 

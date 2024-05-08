@@ -14,6 +14,8 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/3-config/3.2-cicd/3.2.1-jenkins/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.1-learn/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/2.2-aws/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/3-config/3.2-cicd/</loc>
@@ -22,15 +24,21 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/3-config/3.2-cicd/3.2.2-gitlab/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.2-plan/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.3-computing/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/3-config/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.3-practice/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/2.3-terraform/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.4-ceconomics/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.3-diy/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/2.4-git/</loc>
   </url><url>

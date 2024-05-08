@@ -11,7 +11,7 @@
 	"title": "Cloud Computing Essentials",
 	"tags": [],
 	"description": "",
-	"content": "Business Request The city\u0026rsquo;s web portal needs to migrate the beach wave size prediction page to AWS to improve reliability.\nLearning Objectives Articulate the characteristics of the AWS cloud computing platform. Describe the core benefits of using AWS products and services. Compare and contrast AWS cloud services to On-Premises infrastructure. Implement hosting a static web page using Amazon S3. LEARN PLAN "
+	"content": "Business Request The city\u0026rsquo;s web portal needs to migrate the beach wave size prediction page to AWS to improve reliability.\nLearning Objectives Articulate the characteristics of the AWS cloud computing platform. Describe the core benefits of using AWS products and services. Compare and contrast AWS cloud services to On-Premises infrastructure. Implement hosting a static web page using Amazon S3. "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/2-prepair/2.1-docker/",
@@ -42,11 +42,18 @@
 	"content": "Updating \u0026hellip;.\n"
 },
 {
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.1-learn/",
+	"title": "Learn",
+	"tags": [],
+	"description": "",
+	"content": "AWS Global Overview "
+},
+{
 	"uri": "http://localhost:1313/aws-ws/2-prepair/2.2-aws/",
 	"title": "AWS",
 	"tags": [],
 	"description": "",
-	"content": "Amazon Web Services (AWS) is a comprehensive and widely used cloud computing platform provided by Amazon. It offers a vast array of services, allowing individuals and businesses to build and deploy scalable applications and services without the need to invest in physical infrastructure\nOverview AWS CLI : The AWS Command Line Interface (CLI) is a powerful tool provided by Amazon Web Services (AWS) that allows you to interact with AWS services directly from your command line or terminal It provides a convenient and scriptable way to manage your AWS resources without needing to use the AWS Management Console Configuration Prepair and run docker compose file\ndocker-compose run --rm aws --version AWS: Create keypair to access AWS Instances: tf-cli-keypair.pem\ndocker-compose run --rm aws ec2 create-key-pair --key-name tf-cli-keypair --query \u0026#39;KeyMaterial\u0026#39; --output text \u0026gt; tf-cli-keypair.pem Create AWS Account for Terraform use AWS CLI: tf-cli\ndocker-compose run --rm aws iam create-user --user-name tf-cli AWS Checking keypair: Create Access Key \u0026amp; export to local\ndocker-compose run --rm aws iam create-access-key --user-name tf-cli \u0026gt; tf_cli-access_key.json Create policy and configure to allow access EC2 and Limit Region\nCreate a custom policy file: ec2-limited-access-policy.json {\r\u0026#34;Version\u0026#34;: \u0026#34;2012-10-17\u0026#34;,\r\u0026#34;Statement\u0026#34;: [\r{\r\u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;,\r\u0026#34;Action\u0026#34;: \u0026#34;ec2:*\u0026#34;,\r\u0026#34;Resource\u0026#34;: \u0026#34;*\u0026#34;,\r\u0026#34;Condition\u0026#34;: {\r\u0026#34;StringEquals\u0026#34;: {\r\u0026#34;ec2:Region\u0026#34;: \u0026#34;ap-southeast-1\u0026#34;\r}\r}\r}\r]\r} Create a IAM policy: EC2FullAccessAPSouthEast1 docker-compose run --rm aws iam create-policy --policy-name EC2FullAccessAPSouthEast1 --policy-document file://ec2-limited-access-policy.json Attach the Policy to the IAM User: (tf-cli) docker-compose run --rm aws iam attach-user-policy --user-name tf-cli --policy-arn arn:aws:iam::637423373411:policy/EC2FullAccessAPSouthEast1 AWS Checking User: "
+	"content": "Amazon Web Services (AWS) is a comprehensive and widely used cloud computing platform provided by Amazon. It offers a vast array of services, allowing individuals and businesses to build and deploy scalable applications and services without the need to invest in physical infrastructure\nAWS CLI The AWS Command Line Interface (CLI) is a powerful tool provided by Amazon Web Services (AWS) that allows you to interact with AWS services directly from your command line or terminal It provides a convenient and scriptable way to manage your AWS resources without needing to use the AWS Management Console Configuration Prepair and run docker compose file\ndocker-compose run --rm aws --version AWS Access \u0026amp; Secret Create keypair to access AWS Instances: tf-cli-keypair.pem\ndocker-compose run --rm aws ec2 create-key-pair --key-name tf-cli-keypair --query \u0026#39;KeyMaterial\u0026#39; --output text \u0026gt; tf-cli-keypair.pem Create AWS Account for Terraform use AWS CLI: tf-cli\ndocker-compose run --rm aws iam create-user --user-name tf-cli AWS Checking keypair: Create Access Key \u0026amp; export to local\ndocker-compose run --rm aws iam create-access-key --user-name tf-cli \u0026gt; tf_cli-access_key.json Create policy and configure to allow access EC2 and Limit Region\nCreate a custom policy file: ec2-limited-access-policy.json { \u0026#34;Version\u0026#34;: \u0026#34;2012-10-17\u0026#34;, \u0026#34;Statement\u0026#34;: [ { \u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;, \u0026#34;Action\u0026#34;: \u0026#34;ec2:*\u0026#34;, \u0026#34;Resource\u0026#34;: \u0026#34;*\u0026#34;, \u0026#34;Condition\u0026#34;: { \u0026#34;StringEquals\u0026#34;: { \u0026#34;ec2:Region\u0026#34;: \u0026#34;ap-southeast-1\u0026#34; } } } ] } Create a IAM policy: EC2FullAccessAPSouthEast1 docker-compose run --rm aws iam create-policy --policy-name EC2FullAccessAPSouthEast1 --policy-document file://ec2-limited-access-policy.json Attach the Policy to the IAM User: (tf-cli) docker-compose run --rm aws iam attach-user-policy --user-name tf-cli --policy-arn arn:aws:iam::637423373411:policy/EC2FullAccessAPSouthEast1 AWS Checking User: "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/3-config/3.2-cicd/",
@@ -70,11 +77,18 @@
 	"content": "Updating \u0026hellip;.\n"
 },
 {
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.2-plan/",
+	"title": "Plan",
+	"tags": [],
+	"description": "",
+	"content": "LEARN PLAN "
+},
+{
 	"uri": "http://localhost:1313/aws-ws/2-prepair/",
 	"title": "Prepairation",
 	"tags": [],
 	"description": "",
-	"content": "Diagram Workshop-0001 In this lab, we will be automate deploy a Server in AWS Cloud with tools: AWS CLI, Docker Compose, Terraform. Following this link Workshop-0002 CICD is processing \u0026hellip; Following this link Contents Docker AWS Teraform Git Local "
+	"content": "Workshop-101 Overview : The project focuses on automating the deployment of a server in the AWS Cloud using AWS CLI, Docker Compose, and Terraform. Terraform is used to define and provision the necessary infrastructure components, while Docker Compose is employed to manage the Docker containers for the server application. The AWS CLI is used for interacting with AWS services programmatically. By integrating these tools, the project aims to streamline the deployment process, reduce manual effort, and ensure consistency and scalability in the AWS environment. Workflow : process link Workshop-102 Overview : CICD is processing \u0026hellip; Workflow : process link Contents Docker AWS Teraform Git Local "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.3-computing/",
@@ -91,6 +105,13 @@
 	"content": " The Projects for the workshop \u0026hellip;.. Content IaC CICD "
 },
 {
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.3-practice/",
+	"title": "Practice",
+	"tags": [],
+	"description": "",
+	"content": "LEARN PLAN "
+},
+{
 	"uri": "http://localhost:1313/aws-ws/2-prepair/2.3-terraform/",
 	"title": "Terraform",
 	"tags": [],
@@ -103,6 +124,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Business Request The city\u0026rsquo;s surf board shop needs a cost estimation of an architecture with variable resource usage.\nLearning Objectives Describe how pricing estimates are obtained. Use the AWS Pricing Calculator to estimate the price of an AWS architecture. "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.3-diy/",
+	"title": "DIY",
+	"tags": [],
+	"description": "",
+	"content": "LEARN PLAN "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/2-prepair/2.4-git/",
