@@ -6,24 +6,109 @@ chapter : false
 pre : " <b> 3.1.1 </b> "
 ---
 
-In this Workshop we will create an EC2 instances with the information bellow
+In this Workshop we will automate create an EC2 instances with the information bellow by using **Terraform**, **Docker-compose** and **AWS CLI**
+
 #### Overview AWS EC2
--   Instances name: Web-Server
--   VPC: 10.0.0.0/16
--   Subnets: 10.0.1.0/24
--   Region: Singapore (ap-southeast-1)
--   Available zone: ap-southeast-1b
--   Instance type: t2.micro
--   Amazon Machine Images: Amazon Linux 2 AMI
--   Key pair: **tf-cli-keypair**
--   Security setting: 
-    -   Only allow my ip connect SSH to EC2 instance
-    -   Allow all access from port 8080 to EC2 instance
+- AWS User : **tf-cli**
+- Access & Secret key :  **tf_cli-access_key.json**
+- AWS Key-pair : **tf-cli-keypair**
 
-#### Terraform configuration
+- EC2 Instance:
+  - Instances name: **Web-Server**
+  - VPC: 10.0.0.0/16
+  - Subnets: 10.0.1.0/24
+  - Region: Singapore (ap-southeast-1)
+  - Available zone: ap-southeast-1b
+  - Instance type: t2.micro
+  - Amazon Machine Images: Amazon Linux 2 AMI
+  - Key pair: **tf-cli-keypair**
+  - Security setting: 
+      -   Only allow **my ip** connect **SSH** to EC2 instance
+      -   Allow all access from port **8080** to EC2 instance
+   
+#### Review Configuration
 
-Security credential variables:  **variables.tf**
+- Container:
 
+{{%expand "Docker-compose.yml " %}}
+
+```sh
+version: '3'
+services:
+
+# Terraform
+  terraform:
+    image: hashicorp/terraform:latest
+    volumes:
+      - .:/terraform
+    working_dir: /terraform
+
+# AWS CLI'
+  aws:
+    image: anigeo/awscli
+    environment:
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+      AWS_REGION: "${AWS_REGION}"
+      AWS_DEFAULT_REGION: ap-southeast-1
+    volumes:
+      - $PWD:/app
+    working_dir: /app
+```
+{{% /expand%}}
+
+- AWS :
+
+{{%expand "User Access , Secret Key, Key Pair: " %}}
+```sh
+# check aws version
+  docker-compose run --rm aws --version
+
+# create aws user
+  docker-compose run --rm aws iam create-user --user-name tf-cli
+
+# create access key for user
+  docker-compose run --rm aws iam create-access-key --user-name tf-cli > tf_cli-access_key.json
+
+# create keypair for ec2 
+  docker-compose run --rm aws ec2 create-key-pair --key-name tf-cli-keypair --query 'KeyMaterial' --output text > tf-cli-keypair.pem
+```
+{{% /expand%}}
+
+{{%expand "EC2 and Limit Region" %}}
+```sh
+# Custom policy file:
+  ec2-limited-access-policy.json
+
+# Create IAM poliy: EC2FullAccessAPSouthEast1
+  docker-compose run --rm aws iam attach-user-policy --user-name tf-cli --policy-arn arn:aws:iam::637423373411:policy/EC2FullAccessAPSouthEast1
+```
+{{% /expand%}}
+
+{{%expand "ec2-limited-access-policy.json" %}}
+```sh
+ {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "ec2:*",
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "ec2:Region": "ap-southeast-1"
+                }
+            }
+        }
+    ]
+}
+```
+{{% /expand%}}
+
+
+- Terraform :
+
+ {{%expand "variables.tf - Security credential variables  " %}}
 ```sh
 variable "access_key" {
   type        = string
@@ -40,7 +125,9 @@ variable "region" {
   default     = "ap-southeast-1"
 }
 ```
-Instances configurations :**main.tf**
+{{% /expand%}}
+
+{{%expand "main.tf - Instances configurations" %}}
 
 ```sh
 variable vpc_cidr_block {}
@@ -146,7 +233,9 @@ resource "aws_instance" "myapp-server" {
 }
 
 ```
-Terraform provider **AWS** :  **terraform.tfvars**
+{{% /expand%}}
+
+{{%expand "terraform.tfvars - Terraform provider" %}}
 
 ```sh
 # Network and Instance variables
@@ -157,21 +246,27 @@ env_prefix = "web"
 my_ip = "<myip>/32"
 ami_id = "ami-04f73ca9a4310089f"
 ```
-   
+{{% /expand%}}
+
 ### Installation
 Terraform plan: 
 ```dockercompose
  docker-compose run –rm terraform plan
 ```
+{{%expand "process" %}}
 ![311](/aws-ws/images/3-config/3.1-iac/311/1.png)
+{{% /expand%}}
 
 Terraform apply: 
 ```dockercompose
  docker-compose run --rm terraform apply --auto-approve
 ```
+{{%expand "process" %}}
 ![311](/aws-ws/images/3-config/3.1-iac/311/2.png)
+{{% /expand%}}
 
--   AWS Instance checking:
+AWS Instance checking:
+
 ![311](/aws-ws/images/3-config/3.1-iac/311/4.png?featherlight=false&width=90pc)
 
 Add Keypair permission:

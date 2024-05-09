@@ -6,28 +6,61 @@ chapter : false
 pre : " <b> 2.5 </b> "
 ---
 
-#### Overview
+#### VSCode & WSL
+
+**Windows Subsystem for Linux (WSL)** is a compatibility layer developed by Microsoft for running Linux binary executables natively on Windows 10 and Windows Server 2019. It enables developers to run a Linux distribution alongside their existing Windows system without the need for dual-booting or virtual machines.
+
+Configuration
+- Windows Features:
+  - Windows Subsystem for Linux
+  - Vitual machine platform
+
+- Install
+  - wsl --update
+  - wsl --list --verbose
+  - wsl.exe --install ubuntu
+  - wsl.exe --set-version Ubuntu 2
+  - wsl --set-default ubuntu
+  
+{{%expand "Expand:" %}}
+ ![25](/aws-ws/images/2-prepair/2.5-local/2.png?featherlight=false&width=50pc)
+{{% /expand%}}
+
+- VSCODE:
+  - Ctrl Shift P
+  - Add New WSL Window
+
+{{%expand "Expand:" %}}
+ ![25](/aws-ws/images/2-prepair/2.5-local/3.png?featherlight=false&width=50pc)
+{{% /expand%}}
+
+#### Vagrant & VirtualBox
 We will use local environment with **Vagrant** and **VirtualBox** to test best practices.
 
-##### Vagrant
-- Vagrant is an open-source tool for building and managing virtualized development environments. It helps developers create and configure reproducible and portable development environments that closely mimic production setups.
+Vagrant
 
-##### Virtualbox
-- VirtualBox is a powerful open-source virtualization software developed by Oracle Corporation. It allows users to run multiple guest operating systems (OS) simultaneously on a single physical machine.
+  - Vagrant is an open-source tool for building and managing virtualized development environments. It helps developers create and configure reproducible and portable development environments that closely mimic production setups.
 
-#### Configuration
+Virtualbox
 
-**Requirement**
-- Machine 1: **Linux-server**
-  - IP: 192.168.33.100
-  - Memory: 2048 Mb
-- Machine 2: **Jenkins-server**
-  - IP: 192.168.33.110
-  - Memory: 5120 Mb
-- Machine 3: **Monitor-server**
-  - IP: 192.168.33.120
-  - Memory: 2048 Mb
-  
+  - VirtualBox is a powerful open-source virtualization software developed by Oracle Corporation. It allows users to run multiple guest operating systems (OS) simultaneously on a single physical machine.
+
+Configuration
+
+```sh
+    - Machine 1: **Linux-server**
+      - IP: 192.168.33.100
+      - Memory: 2048 Mb
+      
+    - Machine 2: **Jenkins-server**
+      - IP: 192.168.33.110
+      - Memory: 4096 Mb
+    
+    - Machine 3: **Monitor-server**
+      - IP: 192.168.33.120
+      - Memory: 2048 Mb
+```
+
 **Vagrantfile**
 {{%expand "Expand:" %}}
 ```sh
@@ -53,7 +86,7 @@ Vagrant.configure("2") do |config|
     machine2.vm.network "private_network", ip: "192.168.33.110"
     machine2.vm.hostname = "jenkins-server"
     machine2.vm.provider "virtualbox" do |vb|
-      vb.memory = "5120"
+      vb.memory = "4096"
     end
     machine2.vm.synced_folder "./datas", "/vagrant_data"
   end
@@ -157,6 +190,7 @@ vagrant plugin install virtualbox_WSL2
 
 - Install and configured (The Terminal on WSL2)
 
+{{%expand "Configuring" %}}
 ````sh
 # Go to Windows user's dir from WSL
 cd /mnt/c/Users/<my-user-name>/
@@ -178,6 +212,7 @@ vagrant ssh
 
 # Done :)
 ````
+{{% /expand%}}
 
 {{%expand "Processing" %}}
 
