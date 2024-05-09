@@ -163,3 +163,4 @@ docker-compose run --rm terraform destroy --auto-approve
 [3]: /aws-ws/images/3-config/3.1-iac/312/3.png?featherlight=false&width=50pc
 [4]: /aws-ws/images/3-config/3.1-iac/312/4.png?featherlight=false&width=50pc
 [5]: /aws-ws/images/3-config/3.1-iac/312/5.png?featherlight=false&width=50pc
+[6]: /aws-ws/images/3-config/3.1-iac/312/5.png?featherlight=false&width=50pc

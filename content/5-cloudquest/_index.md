@@ -39,14 +39,14 @@ For each assignment, you will receive an automated account to build a new soluti
 
 [0]: /aws-ws/images/5-cloudquest/0.png?featherlight=false&width=50pc
 [1]: /aws-ws/images/5-cloudquest/1.png?featherlight=false&width=90pc
-[2]: /aws-ws/images/5-cloudquest/1.png?featherlight=false&width=90pc
-[3]: /aws-ws/images/5-cloudquest/2.png?featherlight=false&width=90pc
-[4]: /aws-ws/images/5-cloudquest/3.png?featherlight=false&width=90pc
-[5]: /aws-ws/images/5-cloudquest/4.png?featherlight=false&width=90pc
-[6]: /aws-ws/images/5-cloudquest/5.png?featherlight=false&width=90pc
-[7]: /aws-ws/images/5-cloudquest/6.png?featherlight=false&width=90pc
-[8]: /aws-ws/images/5-cloudquest/7.png?featherlight=false&width=90pc
-[9]: /aws-ws/images/5-cloudquest/8.png?featherlight=false&width=90pc
-[10]: /aws-ws/images/5-cloudquest/9.png?featherlight=false&width=90pc
-[11]: /aws-ws/images/5-cloudquest/9.png?featherlight=false&width=90pc
-[12]: /aws-ws/images/5-cloudquest/9.png?featherlight=false&width=90pc
+[2]: /aws-ws/images/5-cloudquest/2.png?featherlight=false&width=90pc
+[3]: /aws-ws/images/5-cloudquest/3.png?featherlight=false&width=90pc
+[4]: /aws-ws/images/5-cloudquest/4.png?featherlight=false&width=90pc
+[5]: /aws-ws/images/5-cloudquest/5.png?featherlight=false&width=90pc
+[6]: /aws-ws/images/5-cloudquest/6.png?featherlight=false&width=90pc
+[7]: /aws-ws/images/5-cloudquest/7.png?featherlight=false&width=90pc
+[8]: /aws-ws/images/5-cloudquest/8.png?featherlight=false&width=90pc
+[9]: /aws-ws/images/5-cloudquest/9.png?featherlight=false&width=90pc
+[10]: /aws-ws/images/5-cloudquest/10.png?featherlight=false&width=90pc
+[11]: /aws-ws/images/5-cloudquest/11.png?featherlight=false&width=90pc
+[12]: /aws-ws/images/5-cloudquest/12.png?featherlight=false&width=90pc
