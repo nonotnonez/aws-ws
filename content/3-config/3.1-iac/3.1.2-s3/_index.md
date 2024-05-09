@@ -16,6 +16,10 @@ In this Workshop we will automate create an S3 bucket
 
 #### Review Configuration
 
+{{% notice tip %}}
+We will use AWS user have AdministratorAccess to create IAM User, Access and Secret Key, Policy and Attach permission AmazoneS3FullAccess to User **tf-s3-cli**. After that add Access and Secret Key to .env to use Docker-compose.
+{{% /notice %}}
+
 - AWS : {{%expand "User Access , Secret Key" %}}
 ```sh
 # check aws version
