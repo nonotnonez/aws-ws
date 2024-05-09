@@ -10,11 +10,30 @@ In this Workshop we will automate create an S3 bucket
 
 #### Overview S3 Bucket
 
-- AWS User:
-- AWS Policy:
-- Bucket name:
+- AWS User: **tf-s3-cli**
+- AWS Policy: **AmazoneS3FullAccess**
+- Bucket name: **090524-tfs3bucket**
 
 #### Review Configuration
+
+- AWS : {{%expand "User Access , Secret Key" %}}
+```sh
+# check aws version
+  docker-compose run --rm aws --version
+
+# create aws user
+  docker-compose run --rm aws iam create-user --user-name tf-s3-cli
+
+# create access key for user
+  docker-compose run --rm aws iam create-access-key --user-name tf-s3-cli > tf-s3-cli-access-key.json
+
+```
+{{% /expand%}}  {{%expand "Attached Amazon S3 Full Access" %}}
+```sh
+# AmazoneS3FullAccess
+  docker-compose run --rm aws iam attach-user-policy --user-name tf-s3-cli --policy-arn arn:aws:iam::637423373411:policy/AmazoneS3FullAccess
+```
+{{% /expand%}} 
 
 - Container: {{%expand "Docker-compose.yml " %}}
 
@@ -41,54 +60,20 @@ services:
       - $PWD:/app
     working_dir: /app
 ```
-{{% /expand%}}
+{{% /expand%}} {{%expand ".env - aws access & secret key" %}}
 
-- AWS : {{%expand "User Access , Secret Key, Key Pair: " %}}
 ```sh
-# check aws version
-  docker-compose run --rm aws --version
-
-# create aws user
-  docker-compose run --rm aws iam create-user --user-name tf-cli
-
-# create access key for user
-  docker-compose run --rm aws iam create-access-key --user-name tf-cli > tf_cli-access_key.json
-
-# create keypair for ec2 
-  docker-compose run --rm aws ec2 create-key-pair --key-name tf-cli-keypair --query 'KeyMaterial' --output text > tf-cli-keypair.pem
-```
-{{% /expand%}}  {{%expand "EC2 and Limit Region" %}}
-```sh
-# Custom policy file:
-  ec2-limited-access-policy.json
-
-# Create IAM poliy: EC2FullAccessAPSouthEast1
-  docker-compose run --rm aws iam attach-user-policy --user-name tf-cli --policy-arn arn:aws:iam::637423373411:policy/EC2FullAccessAPSouthEast1
-```
-{{% /expand%}} {{%expand "ec2-limited-access-policy.json" %}}
-```sh
- {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": "ec2:*",
-            "Resource": "*",
-            "Condition": {
-                "StringEquals": {
-                    "ec2:Region": "ap-southeast-1"
-                }
-            }
-        }
-    ]
-}
+AWS_ACCESS_KEY_ID=xxx
+AWS_SECRET_ACCESS_KEY=xxx
+AWS_REGION=ap-southeast-1
 ```
 {{% /expand%}}
 
 - Terraform 
-{{%expand "main.tf" %}}
 
-```js
+  - **main.tf**
+
+```sh
 # Variables
 variable "access_key" {
   type        = string
@@ -121,7 +106,7 @@ provider "aws" {
 
 # S3 Bucket
 resource "aws_s3_bucket" "example" {
-  bucket = "my-tf-test-bucket"
+  bucket = "090524-tfs3bucket"
 
   tags = {
     Name        = "My bucket"
@@ -129,13 +114,8 @@ resource "aws_s3_bucket" "example" {
   }
 }
 ```
-{{% /expand%}}  {{%expand ".env" %}}
-```sh
-AWS_ACCESS_KEY_ID=<ID>
-AWS_SECRET_ACCESS_KEY=<key>
-AWS_REGION=ap-southeast-1
-```
-{{% /expand%}}
+
+
 
 #### Installation
 
@@ -149,4 +129,33 @@ Amazon S3 Permission
 docker-compose run --entrypoint aws s3 ls
 ```
 
+![311][1]
 
+Create S3 Bucket
+
+```js
+docker-compose run --rm terraform init
+docker-compose run --rm terraform plan
+docker-compose run --rm terraform apply --auto-approve
+```
+![311][4]
+
+AWS Console review
+
+![311][2]
+
+Destroy S3 Bucket
+
+```js
+docker-compose run --rm terraform destroy --auto-approve
+```
+
+![311][5] ![311][6]
+![311][3]
+
+
+[1]: /aws-ws/images/3-config/3.1-iac/312/1.png?featherlight=false&width=50pc
+[2]: /aws-ws/images/3-config/3.1-iac/312/2.png?featherlight=false&width=50pc
+[3]: /aws-ws/images/3-config/3.1-iac/312/3.png?featherlight=false&width=50pc
+[4]: /aws-ws/images/3-config/3.1-iac/312/4.png?featherlight=false&width=50pc
+[5]: /aws-ws/images/3-config/3.1-iac/312/5.png?featherlight=false&width=50pc

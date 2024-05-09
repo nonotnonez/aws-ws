@@ -72,16 +72,19 @@ services:
 
 # create keypair for ec2 
   docker-compose run --rm aws ec2 create-key-pair --key-name tf-cli-keypair --query 'KeyMaterial' --output text > tf-cli-keypair.pem
+
 ```
 {{% /expand%}}
 
-{{%expand "EC2 and Limit Region" %}}
+{{%expand "Attach User with Policy Access EC2 and Limit Region" %}}
 ```sh
 # Custom policy file:
   ec2-limited-access-policy.json
 
 # Create IAM poliy: EC2FullAccessAPSouthEast1
   docker-compose run --rm aws iam attach-user-policy --user-name tf-cli --policy-arn arn:aws:iam::637423373411:policy/EC2FullAccessAPSouthEast1
+
+#
 ```
 {{% /expand%}}
 

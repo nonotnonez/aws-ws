@@ -12,6 +12,49 @@ Amazon Web Services (AWS) is a comprehensive and widely used cloud computing pla
 -   The AWS Command Line Interface (CLI) is a powerful tool provided by Amazon Web Services (AWS) that allows you to interact with AWS services directly from your command line or terminal
 -   It provides a convenient and scriptable way to manage your AWS resources without needing to use the AWS Management Console
 
+AWS CLI configuration overview
+
+ {{%expand "AWS CLI User: tf-cli" %}}
+```sh
+# Create User
+   docker-compose run --rm aws iam create-user --user-name tf-cli
+
+# List Users
+  docker-compose run --rm aws iam list-users
+
+# Delete User
+  docker-compose run --rm  aws iam delete-user --user-name  tf-cli
+
+# create access key for user
+  docker-compose run --rm aws iam create-access-key --user-name tf-cli > tf_cli-access_key.json
+
+# List Access key or User
+  docker-compose run --rm aws iam list-access-keys --user-name tf-cli  
+
+# Delete Access key
+  docker-compose run --rm aws iam delete-access-key --user-name tf-cli --access-key-id AKIAZI2LEZRR5T3WDM5U
+
+# Attach admin access:
+  docker-compose run --rm aws iam attach-user-policy --user-name tf-cli --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
+
+# User Permission
+  docker-compose run --rm aws iam list-attached-user-policies --user-name tf-cli
+
+# Detach Policy
+  docker-compose run --rm aws iam detach-user-policy --user-name tf-cli --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
+
+# Create Policy custom file
+  ec2-limited-access-policy.json
+
+ # Create a Custom IAM policy:
+  docker-compose run --rm aws iam create-policy --policy-name EC2FullAccessAPSouthEast1 --policy-document file://ec2-limited-access-policy.json
+
+# Attach Policy
+  docker-compose run --rm aws iam attach-user-policy --user-name tf-cli --policy-arn arn:aws:iam::637423373411:policy/EC2FullAccessAPSouthEast1
+
+```
+{{% /expand%}}
+
 #### Configuration
 Prepair and run docker compose file
 ```js
