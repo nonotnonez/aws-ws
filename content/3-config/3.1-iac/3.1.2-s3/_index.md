@@ -153,14 +153,15 @@ Destroy S3 Bucket
 ```js
 docker-compose run --rm terraform destroy --auto-approve
 ```
+{{%expand "Expand detroy S3 process" %}}
 
-![311][5] ![311][6]
-![311][3]
+![311](/aws-ws/images/3-config/3.1-iac/312/5.png?featherlight=false&width=90pc)
+![311](/aws-ws/images/3-config/3.1-iac/312/6.png?featherlight=false&width=90pc)
+![311](/aws-ws/images/3-config/3.1-iac/312/3.png?featherlight=false&width=90pc)
+
+{{% /expand%}}
 
 
 [1]: /aws-ws/images/3-config/3.1-iac/312/1.png?featherlight=false&width=50pc
 [2]: /aws-ws/images/3-config/3.1-iac/312/2.png?featherlight=false&width=50pc
-[3]: /aws-ws/images/3-config/3.1-iac/312/3.png?featherlight=false&width=50pc
 [4]: /aws-ws/images/3-config/3.1-iac/312/4.png?featherlight=false&width=50pc
-[5]: /aws-ws/images/3-config/3.1-iac/312/5.png?featherlight=false&width=50pc
-[6]: /aws-ws/images/3-config/3.1-iac/312/5.png?featherlight=false&width=50pc

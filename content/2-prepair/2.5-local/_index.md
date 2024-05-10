@@ -11,39 +11,35 @@ pre : " <b> 2.5 </b> "
 **Windows Subsystem for Linux (WSL)** is a compatibility layer developed by Microsoft for running Linux binary executables natively on Windows 10 and Windows Server 2019. It enables developers to run a Linux distribution alongside their existing Windows system without the need for dual-booting or virtual machines.
 
 Configuration
-- Windows Features:
+
+{{%expand "Windows Features" %}}
   - Windows Subsystem for Linux
   - Vitual machine platform
+{{% /expand%}}  
 
-- Install
+{{%expand "Install" %}}
   - wsl --update
   - wsl --list --verbose
   - wsl.exe --install ubuntu
   - wsl.exe --set-version Ubuntu 2
   - wsl --set-default ubuntu
-  
-{{%expand "Expand:" %}}
- ![25](/aws-ws/images/2-prepair/2.5-local/2.png?featherlight=false&width=50pc)
-{{% /expand%}}
+{{% /expand%}}  
 
-- VSCODE:
+![25](/aws-ws/images/2-prepair/2.5-local/2.png?featherlight=false&width=50pc)
+
+
+{{%expand "VSCode" %}}
   - Ctrl Shift P
   - Add New WSL Window
-
-{{%expand "Expand:" %}}
- ![25](/aws-ws/images/2-prepair/2.5-local/3.png?featherlight=false&width=50pc)
+![25](/aws-ws/images/2-prepair/2.5-local/3.png?featherlight=false&width=50pc)
 {{% /expand%}}
 
 #### Vagrant & VirtualBox
 We will use local environment with **Vagrant** and **VirtualBox** to test best practices.
 
-Vagrant
+Vagrant : is an open-source tool for building and managing virtualized development environments. It helps developers create and configure reproducible and portable development environments that closely mimic production setups.
 
-  - Vagrant is an open-source tool for building and managing virtualized development environments. It helps developers create and configure reproducible and portable development environments that closely mimic production setups.
-
-Virtualbox
-
-  - VirtualBox is a powerful open-source virtualization software developed by Oracle Corporation. It allows users to run multiple guest operating systems (OS) simultaneously on a single physical machine.
+Virtualbox :is a powerful open-source virtualization software developed by Oracle Corporation. It allows users to run multiple guest operating systems (OS) simultaneously on a single physical machine.
 
 Configuration
 
@@ -138,14 +134,13 @@ Destroy all machine
 
 ### Windows WSL & Vagrant
 
-[Source review](https://blog.thenets.org/how-to-run-vagrant-on-wsl-2/)
-
-- Requirements:
+{{%expand " Requirements" %}}
   - Windows 10
   - Virtualbox
   - WSL 2
   - Vagrant
   - Vagrant plugin: vitualbox_WSL2
+{{% /expand%}}
 
 - Install VirtualBox
 - Install WSL2: `wsl -l -v`

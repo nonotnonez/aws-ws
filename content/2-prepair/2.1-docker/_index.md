@@ -30,7 +30,7 @@ Check the installed software
 
 Create a docker compose file to run the software on the container environment
 -  **docker-compose.yml**
-```Docker-compose
+```sh
 version: '3'
 services:
 
