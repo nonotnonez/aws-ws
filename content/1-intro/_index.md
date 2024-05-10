@@ -6,6 +6,9 @@ chapter : false
 pre : " <b> 1. </b> "
 ---
 
+
+[Home](./_index.md) | [Sile Project](../3-config/_index.md)
+
 #### Overview
 
 **AWS** provides a flexible and scalable platform that enables businesses to innovate and grow without the need to invest in and manage their own infrastructure. It's used by organizations of all sizes across various industries for a wide range of use cases, from startups building new applications to large enterprises migrating their IT infrastructure to the cloud.

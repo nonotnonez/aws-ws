@@ -7,6 +7,8 @@ chapter : false
 
 # AWS Projects
 
+[Home](./_index.md) | [Sile Project](./3-config/_index.md) 
+
 **Amazon Web Services (AWS)** is a comprehensive, evolving cloud computing platform provided by Amazon.com. It offers a wide range of services, including computing power, storage solutions, networking, databases, machine learning, analytics, security, and more, all delivered over the internet.
 
 **Overview**
