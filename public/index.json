@@ -63,6 +63,13 @@
 	"content": "AWS Global Overview AWS Global Infrastructure Benefits AWS Well-Architected Amazon S3 Amazon S3 More Feature Amazone S3 Access-Management "
 },
 {
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.6-vpc/5.6.1-learn/",
+	"title": "Learn",
+	"tags": [],
+	"description": "",
+	"content": "1. Amazon VPC Overview 2. Amazon VPC Concepts 3. Amazon VPC Security 4. Amazon VPC - Internet Connectivity 5. Amazon VPC Peering Connections 1. AWS Security and Complicance Overview 2. AWS Share Responsibility Model Overview AWS Customer ![561]56]\nEC2 Lambda 3. AWS IAM - Overview 4. AWS IAM - Manage Permissions ![561][56] 5. AWS IAM - Manage IAM Roles 6. AWS IAM Features - Access Analysis "
+},
+{
 	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.8-security/5.8.1-learn/",
 	"title": "Learn",
 	"tags": [],
@@ -214,7 +221,7 @@
 	"title": "Connecting VPCs",
 	"tags": [],
 	"description": "",
-	"content": "Business Request The city\u0026rsquo;s marketing team wants separate Amazon VPCs for each department that allows communication between Amazon VPCs.\nLearning Objectives Summarize how VPC peering works with Amazon VPC. Explain the steps for establishing a VPC peering connection. Create a peering connection between two Amazon VPCs. Establish a peering connection between Amazon VPCs using a specific subnet. "
+	"content": "VPCs Amazon VPC Overview Amazon VPC Concepts Amazon VPC Security Amazon VPC - Internet Connectivity Amazon VPC Peering Connections "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/6-wsaudio/",
@@ -225,7 +232,7 @@
 },
 {
 	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.7-database/",
-	"title": "DDatabases in Practice",
+	"title": "Databases in Practice",
 	"tags": [],
 	"description": "",
 	"content": "Business Request Improve the insurance company\u0026rsquo;s relational database operations, performance, and availability.\nLearning Objectives Review the features, benefits and database types available with Amazon RDS. Describe vertical and horizontal scaling on Amazon RDS. Use Amazon RDS read replicas to increase database performance. Implement multi-AZ deployments of Amazon RDS to increase availability. "

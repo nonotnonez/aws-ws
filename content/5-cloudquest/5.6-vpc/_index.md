@@ -6,13 +6,9 @@ chapter : false
 pre : " <b> 5.6 </b> "
 ---
 
-#### Business Request
-The city's marketing team wants separate Amazon VPCs for each department that allows communication between Amazon VPCs.
-
-#### Learning Objectives
-- Summarize how VPC peering works with Amazon VPC.
-- Explain the steps for establishing a VPC peering connection.
-- Create a peering connection between two Amazon VPCs.
-- Establish a peering connection between Amazon VPCs using a specific subnet.
-
-![714](/thedevops/images/7-projects/7.1-cquest/6.png?featherlight=false&width=90pc)
+#### VPCs
+1. Amazon VPC Overview
+2. Amazon VPC Concepts
+3. Amazon VPC Security
+4. Amazon VPC - Internet Connectivity
+5. Amazon VPC Peering Connections
