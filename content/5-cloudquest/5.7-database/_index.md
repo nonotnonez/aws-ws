@@ -1,5 +1,5 @@
 ---
-title : "DDatabases in Practice"
+title : "Databases in Practice"
 date : "`r Sys.Date()`"
 weight : 7
 chapter : false

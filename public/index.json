@@ -63,6 +63,13 @@
 	"content": "AWS Global Overview AWS Global Infrastructure Benefits AWS Well-Architected Amazon S3 Amazon S3 More Feature Amazone S3 Access-Management "
 },
 {
+	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.8-security/5.8.1-learn/",
+	"title": "Learn",
+	"tags": [],
+	"description": "",
+	"content": "1. AWS Security and Complicance Overview 2. AWS Share Responsibility Model Overview AWS Customer EC2 Lambda 3. AWS IAM - Overview 4. AWS IAM - Manage Permissions 5. AWS IAM - Manage IAM Roles 6. AWS IAM Features - Access Analysis "
+},
+{
 	"uri": "http://localhost:1313/aws-ws/2-prepair/2.2-aws/",
 	"title": "AWS",
 	"tags": [],
@@ -225,10 +232,10 @@
 },
 {
 	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.8-security/",
-	"title": "SCore Security Concepts",
+	"title": "Core Security Concepts",
 	"tags": [],
 	"description": "",
-	"content": "Business Request Help improve security at the city\u0026rsquo;s stock exchange by ensuring that support engineers can only perform authorized actions.\nLearning Objectives Describe the creation process and differences between AWS IAM users, roles, and groups. Review the structure and components of AWS IAM Policies. Summarize the AWS Shared Responsibility Model and compliance programs. "
+	"content": "AWS Identity and Access Managêmnt (IAM) AWS Security and Complicance Overview AWS Share Responsibility Model Overview AWS IAM - Overview AWS IAM - Manage Permissions AWS IAM - Manage IAM Roles AWS IAM Features - Access Analysis "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.9-efs/",
