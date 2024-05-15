@@ -4,6 +4,8 @@
   <url>
     <loc>http://localhost:1313/aws-ws/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/7-fcj/7.1-cloud9/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/6-wsaudio/6.1-devsecops/</loc>
@@ -69,6 +71,8 @@
     <loc>http://localhost:1313/aws-ws/6-wsaudio/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.7-database/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/7-fcj/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.8-security/</loc>
   </url><url>
