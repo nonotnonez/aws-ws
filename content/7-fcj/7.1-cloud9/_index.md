@@ -32,6 +32,3 @@ In AWS Cloud9 > Your environments : Select **clou9instance** and click **Delete*
 
 [1]: /aws-ws/images/7/71/1.png?featherlight=false&width=50pc
 
-![6][2]
-
-[2]: /aws-ws/images/6/61/2.png?featherlight=false&width=50pc
