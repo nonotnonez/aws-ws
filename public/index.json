@@ -112,6 +112,13 @@
 	"content": "Updating \u0026hellip;.\n"
 },
 {
+	"uri": "http://localhost:1313/aws-ws/7-fcj/7.2-lambda/",
+	"title": "Lambda",
+	"tags": [],
+	"description": "",
+	"content": "AWS Lamda Source:\nServerless Computing with AWS Lambda\nLearning Amazon Web Services Lambda\nAWS Account Group:\nGroup name: new-admin Permission: AdministratorAccess User:\nUser name: lambdauser Group: new-admin Download : Access key ID Secret access key AWS Lambda Severless \u0026amp; Lambda\rAWS Lambda 2 Amazon API Gateway \u0026amp; Use Case\rAWS API Gateway 2 Use Case Amazon S3\rAWS S3 2 Amazon DynamoDB \u0026amp; SQS \u0026amp; Kinesis\rDynamoDB SQS Kinesis 2.1 Lambda Function\nFuntion name: my-lambda-function Runtime: Node.js 18.x Architecture: x86_64 Lambda: my-lambda-function\nEdit Test configuration and Deploy Configure Test Event Event name: test-event Template: hello-world Run Test - test-event 2.2 Add API Gateway as a trigger to Lambda\nLambda : my-lambda-function\nAdd trigger:\nSelect a source: API Gateway API type: HTTP API Security: Open Configuration check:\n- - - Edit Code: - - - "
+},
+{
 	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.2-plan/",
 	"title": "Plan",
 	"tags": [],
