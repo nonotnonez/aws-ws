@@ -16,6 +16,19 @@ pre : " <b> 2. </b> "
 
 ![2](/aws-ws/images/2/tf-ws-0001.png?featherlight=false&width=90pc)
 
+#### AWS Workshop Practice
+
+View Project at : [Cloud DevSecOps with Hashicorp, Palo Alto Networks & AWS](https://nonotnonez.github.io/ws02/)
+
+- **Overview** :
+
+  - This workshop will demonstrate how to leverage infrastructure as code (IaC) and DevSecOps patterns to automate, scale, and improve the security posture of cloud infrastructure and applications. We will create a pipeline that ensures our configurations are secure and compliant from code to cloud.
+
+![2](/aws-ws/images/2/1.png?featherlight=false&width=90pc)
+![2](/aws-ws/images/2/2.png?featherlight=false&width=90pc)
+
+
+
 #### Workshop-102 
 -  **Overview** :
    -  CICD is processing ...
