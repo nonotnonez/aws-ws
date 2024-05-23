@@ -6,8 +6,133 @@ chapter : false
 pre : " <b> 7.2 </b> "
 ---
 
-#### AWS Lamda
+#### FCJ: Optimizing EC2 Cost with Lambda
 
+Source: https://000022.awsstudygroup.com/vi/
+
+![72](/aws-ws/images/7/72/100.png?featherlight=false&width=50pc) 
+
+1. Prepairation:
+
+- VPC: **lambda-lab**
+  - Auto-generation
+  - CIDR: 10.0.0.0/16
+- Subnet: 
+  - lambda-lab-subnet-public...
+  - Enable auto-assign IPv4 Address
+- Security Group: **lambda-lab**
+  - Inbound rules:  SSH - ICMP - HTTP - HTTPS
+- EC2 Instance: **lambda-lab-instance**
+  - Key pair: **lambda-lab-key**
+  - VPC: lambda-lab-vpc
+  - Subnet: lambda-lab-subnet-public
+  - SG: lambda-lab
+  - Tags:
+    - Key: environment-auto - Value: true
+- IAM Role: **dc-common-lambda-role**
+  - Permision:
+    - AmazonEC2FullAccess
+    - CloudWatchFullAccess
+- Slack:
+  - Workspace:  **aws-lambda-labs**
+  - New channel: **notification**
+  - Webhook URL: COPY Link
+
+2. Create Lambda Function
+
+2.1 Function stop instance:
+ 
+- Lambda 
+  - Function name: **dc-common-lambda-auto-stop**
+  - Runtime: Python 3.8
+  - Architecture: x86_64
+  - Existing role:  **dc-common-lambda-role**
+    - Configure > Environment variables:
+      - Key: **environment_auto**     - Value: **true**
+    - Code : **lambda_function** 
+      - You need to change webhook_url to receive notifications to Slack.
+import boto3
+      - Deploy
+
+{{%expand "expand: lambda_funtion" %}}
+```sh
+import boto3
+import os
+import json
+import urllib3
+
+ec2_resource = boto3.resource('ec2')
+http = urllib3.PoolManager()
+webhook_url = "https://hooks.slack.com/services/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"
+
+def lambda_handler(event, context):
+    environment_auto= os.environ.get('environment_auto')
+    if not environment_auto:
+        print('Target is empty')
+    else:
+        instances = ec2_resource.instances.filter(
+            Filters=[{'Name': 'tag:environment_auto', 'Values': [environment_auto]}]
+        )     
+        if not list(instances):
+            response = {
+                "statusCode":500,
+                "body": "Target Instance is None"
+            }
+        else:
+            action_stop = instances.stop()
+            sent_slack(action_stop)
+            response = {
+                "statusCode":200,
+                "body": "EC2 Stopping"
+            }
+        return response
+
+
+def sent_slack(action_stop):
+    list_instance_id = []
+    if (len(action_stop)>0) and ("StoppingInstances" in action_stop[0]) and (len(action_stop[0]["StoppingInstances"])>0):
+        for i in action_stop[0]["StoppingInstances"] :
+            list_instance_id.append(i["InstanceId"])
+            msg = "Stopping Instances ID:\n %s" %(list_instance_id)
+            data = {"text":msg}
+            r = http.request("POST",
+                webhook_url,
+                body = json.dumps(data),
+                headers = {"Content-Type":"application/json"})
+    else:
+        print ('Not found Instances Stop')
+
+```
+{{% /expand%}}
+
+- Cloud watch - Amazone Event Brigde
+  - Rules - Create rule
+    - Name: **dc-common-lambda-auto-stop**
+    - Description: dc-common-lambda-auto-stop
+    - Select : **Schedule**
+    - Schedule pattern:
+      - A schedule that runs at a regular rate, such as every 10 minutes.
+      - rate: 9 - Hours
+    - Select target:
+      - Types:  AWS service
+      - Target: Lambda Function
+      - Function: dc-common-lambda-auto-stop
+    - Create rule
+
+3. Check result
+
+- Lamba Function: dc-common-lambda-auto-start
+  - Test - Test event action: Create new event
+  - Event name: **instance-stop**
+  - Save -> Test
+- Slack: Notification
+  - check incomming-webhook message
+- Instances: lambda-lab-instance
+  - Status: Stopped
+  
+----
+
+#### Learn
 Source: 
 
 [Serverless Computing with AWS Lambda](https://www.linkedin.com/learning/serverless-computing-with-aws-lambda/serverless-computing-with-lambdas?u=103729754)
