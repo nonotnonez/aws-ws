@@ -14,6 +14,41 @@ Source:
 
 [Learning Amazon Web Services Lambda](https://www.linkedin.com/learning/learning-amazon-web-services-lambda-22774748/create-your-first-aws-lambda?resume=false&u=103729754) (Is Processing)
 
+Challenge:
+
+|  Lambda Function | API Gateway | 
+|---|---|
+| ![72](/aws-ws/images/7/72/60.png?featherlight=false&width=40pc) |  ![72](/aws-ws/images/7/72/69.png?featherlight=false&width=40pc) |
+
+Solution:
+
+- Create funtion: Lambda > Funtions
+  - Funtion name: **challenge1**  
+    - Add Trigger:  API Gateway
+      - Create a new API
+      - Security: Open
+      - Code - Edit index.mjs > Deploy
+      - Configuration: Check API Endpoint
+
+- Use Postman to POST value
+  - Input valuse 1, value 2
+
+- Clean up your AWS environment
+  - Delete all AWS resources
+  - Delete all the endpoints
+  - **sam delete**
+
+Workflow:
+
+|  Lambda Function | API Gateway | 
+|---|---|
+| ![72](/aws-ws/images/7/72/61.png?featherlight=false&width=40pc) |  ![72](/aws-ws/images/7/72/62.png?featherlight=false&width=40pc) |
+| ![72](/aws-ws/images/7/72/63.png?featherlight=false&width=40pc) |  ![72](/aws-ws/images/7/72/64.png?featherlight=false&width=40pc) |
+| ![72](/aws-ws/images/7/72/65.png?featherlight=false&width=40pc) |  ![72](/aws-ws/images/7/72/66.png?featherlight=false&width=40pc) |
+| ![72](/aws-ws/images/7/72/67.png?featherlight=false&width=40pc) |  ![72](/aws-ws/images/7/72/68.png?featherlight=false&width=40pc) |
+
+
+----
 1. AWS Account
 
 Group: 
@@ -33,36 +68,36 @@ User:
 
 |  AWS Lambda| 2 | 
 |---|---|
-| ![72](/aws-ws/images/7/72/1.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |  ![72](/aws-ws/images/7/72/2.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |
-| ![72](/aws-ws/images/7/72/3.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |  ![72](/aws-ws/images/7/72/4.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |
-| ![72](/aws-ws/images/7/72/5.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |  ![72](/aws-ws/images/7/72/6.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |
-| ![72](/aws-ws/images/7/72/7.png?featherlight=false&width=40pc?featherlight=false&width=90pc) | 
+| ![72](/aws-ws/images/7/72/1.png?featherlight=false&width=40pc) |  ![72](/aws-ws/images/7/72/2.png?featherlight=false&width=40pc) |
+| ![72](/aws-ws/images/7/72/3.png?featherlight=false&width=40pc) |  ![72](/aws-ws/images/7/72/4.png?featherlight=false&width=40pc) |
+| ![72](/aws-ws/images/7/72/5.png?featherlight=false&width=40pc) |  ![72](/aws-ws/images/7/72/6.png?featherlight=false&width=40pc) |
+| ![72](/aws-ws/images/7/72/7.png?featherlight=false&width=40pc) | 
 
 {{% /expand%}}
 {{%expand "Amazon API Gateway & Use Case" %}}
 
 |  AWS API Gateway| 2 | 
 |---|---|
-| ![72](/aws-ws/images/7/72/12.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |  ![72](/aws-ws/images/7/72/13.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |
-| ![72](/aws-ws/images/7/72/19.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |  ![72](/aws-ws/images/7/72/20.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |
-| Use Case |  ![72](/aws-ws/images/7/72/21.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |
+| ![72](/aws-ws/images/7/72/12.png?featherlight=false&width=40pc) |  ![72](/aws-ws/images/7/72/13.png?featherlight=false&width=40pc) |
+| ![72](/aws-ws/images/7/72/19.png?featherlight=false&width=40pc) |  ![72](/aws-ws/images/7/72/20.png?featherlight=false&width=40pc) |
+| Use Case |  ![72](/aws-ws/images/7/72/21.png?featherlight=false&width=40pc) |
 {{% /expand%}}
 {{%expand "Amazon S3" %}}
 |  AWS S3| 2 | 
 |---|---|
-| ![72](/aws-ws/images/7/72/14.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |  ![72](/aws-ws/images/7/72/15.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |
+| ![72](/aws-ws/images/7/72/14.png?featherlight=false&width=40pc) |  ![72](/aws-ws/images/7/72/15.png?featherlight=false&width=40pc) |
 
 {{% /expand%}}
 {{%expand "Amazon DynamoDB & SQS & Kinesis" %}}
 |DynamoDB| SQS | Kinesis |
 |---|---|---|
-| ![72](/aws-ws/images/7/72/16.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |  ![72](/aws-ws/images/7/72/17.png?featherlight=false&width=40pc?featherlight=false&width=90pc) | ![72](/aws-ws/images/7/72/18.png?featherlight=false&width=40pc?featherlight=false&width=90pc)|
+| ![72](/aws-ws/images/7/72/16.png?featherlight=false&width=40pc) |  ![72](/aws-ws/images/7/72/17.png?featherlight=false&width=40pc) | ![72](/aws-ws/images/7/72/18.png?featherlight=false&width=40pc)|
 
 {{% /expand%}}
 {{%expand "Amazon Cloudwatch" %}}
 |CloudWatch| - | 
 |---|---|
-| ![72](/aws-ws/images/7/72/50.png?featherlight=false&width=40pc?featherlight=false&width=90pc) |  ![72](/aws-ws/images/7/72/51.png?featherlight=false&width=40pc?featherlight=false&width=90pc) | 
+| ![72](/aws-ws/images/7/72/50.png?featherlight=false&width=40pc) |  ![72](/aws-ws/images/7/72/51.png?featherlight=false&width=40pc) | 
 
 {{% /expand%}}
 
@@ -112,11 +147,25 @@ API Development: https://www.postman.com/
 | ![72][40] | ![72][41] |
 
 2.4 Monitor your funtion with CloudWatch metrics
+
+- the metrics that provides the Lambda function.
+
 2.5 Adding CloudWatch Logs
 
-- Add log to code
+- Add log to code : index.mjs
 - Test API with Postman
-- Check: /aws/lambda/my-lambda-function
+- Monitor - View CloudWatch logs
+- Check: CloudWatch > Log Groups > /aws/lambda/**my-lambda-function**
+- Login Lambda console > Monitor > Logs
+
+| - |- | 
+|---|---|
+| ![72][52] | ![72][53] |
+| ![72][54] | ![72][55] |
+
+
+
+  
 
 
 
@@ -150,3 +199,13 @@ API Development: https://www.postman.com/
 
 [40]: /aws-ws/images/7/72/40.png?featherlight=false&width=50pc
 [41]: /aws-ws/images/7/72/41.png?featherlight=false&width=50pc
+
+[52]: /aws-ws/images/7/72/52.png?featherlight=false&width=50pc
+[53]: /aws-ws/images/7/72/53.png?featherlight=false&width=50pc
+[54]: /aws-ws/images/7/72/54.png?featherlight=false&width=50pc
+[55]: /aws-ws/images/7/72/55.png?featherlight=false&width=50pc
+
+[60]: /aws-ws/images/7/72/60.png?featherlight=false&width=50pc
+[61]: /aws-ws/images/7/72/61.png?featherlight=false&width=50pc
+[62]: /aws-ws/images/7/72/62.png?featherlight=false&width=50pc
+[63]: /aws-ws/images/7/72/63.png?featherlight=false&width=50pc
