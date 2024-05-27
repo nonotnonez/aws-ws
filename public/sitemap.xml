@@ -10,6 +10,8 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/6-wsaudio/6.1-devsecops/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/3-config/3.2-devopsaws/3.2.1-commit/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/2.1-docker/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/3-config/3.1-iac/3.1.1-ec2/</loc>
@@ -17,8 +19,6 @@
     <loc>http://localhost:1313/aws-ws/3-config/3.1-iac/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/1-intro/</loc>
-  </url><url>
-    <loc>http://localhost:1313/aws-ws/3-config/3.2-cicd/3.2.1-jenkins/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.1-learn/</loc>
   </url><url>
@@ -28,11 +28,11 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/2.2-aws/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/3-config/3.2-cicd/</loc>
-  </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.2-cloudfirst/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/3-config/3.2-cicd/3.2.2-gitlab/</loc>
+    <loc>http://localhost:1313/aws-ws/3-config/3.2-devopsaws/3.2.2-build/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/3-config/3.2-devopsaws/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/7-fcj/7.2-lambda/</loc>
   </url><url>
@@ -41,6 +41,8 @@
     <loc>http://localhost:1313/aws-ws/2-prepair/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/3-config/3.1-iac/3.1.2-s3/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/3-config/3.2-devopsaws/3.2.3-deploy/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.3-computing/</loc>
   </url><url>
@@ -55,6 +57,8 @@
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.4-ceconomics/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/7-fcj/7.4-cf/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/3-config/3.2-devopsaws/3.2.4-pipeline/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.4-diy/</loc>
   </url><url>
