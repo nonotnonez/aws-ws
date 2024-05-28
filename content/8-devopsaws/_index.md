@@ -1,9 +1,9 @@
 ---
 title : "DevOps On AWS"
 date : "`r Sys.Date()`"
-weight : 2
+weight : 8
 chapter : false
-pre : " <b> 3.2 </b> "
+pre : " <b> 8. </b> "
 ---
 
 - CI/CD stands for continuous integration, and then continuous delivery or deployment.

@@ -3,10 +3,10 @@ title : "CodeCommit"
 date : "`r Sys.Date()`"
 weight : 1
 chapter : false
-pre : " <b> 3.2.1 </b> "
+pre : " <b> 8.1 </b> "
 ---
 
-![321](/aws-ws/images/3-config/3.2-devopsaws/321/1.png?featherlight=false&width=50pc)
+![81](/aws-ws/images/8-devopsaws/81/1.png?featherlight=false&width=50pc)
 
 -  Version control is the ability to understand the various changes that happened to the code overtime (and possibly roll back)
 
@@ -32,7 +32,7 @@ Developer Tools > CodeCommit > Repository > Create repository
       - Clone URL - Clone HTTPS
     - Ex: git clone https://git-commit.aws-east-1.amazonaws.com/v1/repos/cicd-repo
 
-![321](/aws-ws/images/3-config/3.2-devopsaws/321/2.png?featherlight=false&width=50pc)  
+![81](/aws-ws/images/8-devopsaws/81/2.png?featherlight=false&width=50pc)  
 
 2. Clone, add, commit, push
 
@@ -61,9 +61,9 @@ Developer Tools > CodeCommit > Repository > Create repository
 - Check on AWS repo
   - Commits : review changes
   
-![321](/aws-ws/images/3-config/3.2-devopsaws/321/4.png?featherlight=false&width=50pc) 
-![321](/aws-ws/images/3-config/3.2-devopsaws/321/5.png?featherlight=false&width=50pc)   
-![321](/aws-ws/images/3-config/3.2-devopsaws/321/3.png?featherlight=false&width=50pc)  
+![81](/aws-ws/images/8-devopsaws/81/4.png?featherlight=false&width=50pc) 
+![81](/aws-ws/images/8-devopsaws/81/5.png?featherlight=false&width=50pc)   
+![81](/aws-ws/images/8-devopsaws/81/3.png?featherlight=false&width=50pc)  
 
 
 4. Branch merge pull request
@@ -74,11 +74,11 @@ Developer Tools > CodeCommit > Repository > Create repository
   - git add .
   - git commit -m "revised index to v3"
   - git push
-    ![321](/aws-ws/images/3-config/3.2-devopsaws/321/6.png?featherlight=false&width=50pc)  
+    ![81](/aws-ws/images/8-devopsaws/81/6.png?featherlight=false&width=50pc)  
 
 - Check AWS repo
   - Branches
-    ![321](/aws-ws/images/3-config/3.2-devopsaws/321/7.png?featherlight=false&width=50pc) 
+    ![81](/aws-ws/images/8-devopsaws/81/7.png?featherlight=false&width=50pc) 
   
   - Pull request 
     - Create pull request

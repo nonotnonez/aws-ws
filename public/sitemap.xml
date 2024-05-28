@@ -10,7 +10,7 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/6-wsaudio/6.1-devsecops/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/3-config/3.2-devopsaws/3.2.1-commit/</loc>
+    <loc>http://localhost:1313/aws-ws/8-devopsaws/8.1-commit/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/2.1-docker/</loc>
   </url><url>
@@ -30,19 +30,17 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.2-cloudfirst/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/3-config/3.2-devopsaws/3.2.2-build/</loc>
-  </url><url>
-    <loc>http://localhost:1313/aws-ws/3-config/3.2-devopsaws/</loc>
+    <loc>http://localhost:1313/aws-ws/8-devopsaws/8.2-build/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/7-fcj/7.2-lambda/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.2-plan/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/2-prepair/</loc>
-  </url><url>
     <loc>http://localhost:1313/aws-ws/3-config/3.1-iac/3.1.2-s3/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/3-config/3.2-devopsaws/3.2.3-deploy/</loc>
+    <loc>http://localhost:1313/aws-ws/2-prepair/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/8-devopsaws/8.3-deploy/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.3-computing/</loc>
   </url><url>
@@ -58,7 +56,7 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/7-fcj/7.4-cf/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/3-config/3.2-devopsaws/3.2.4-pipeline/</loc>
+    <loc>http://localhost:1313/aws-ws/8-devopsaws/8.4-pipeline/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.4-diy/</loc>
   </url><url>
@@ -76,15 +74,17 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.5-networking/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.6-vpc/</loc>
-  </url><url>
     <loc>http://localhost:1313/aws-ws/6-wsaudio/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/5-cloudquest/5.6-vpc/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.7-database/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/7-fcj/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.8-security/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/8-devopsaws/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.9-efs/</loc>
   </url><url>

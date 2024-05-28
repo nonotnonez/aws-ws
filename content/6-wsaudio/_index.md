@@ -1,5 +1,5 @@
 ---
-title : "Workshop Audio"
+title : "AWS Workshop Studio"
 date : "`r Sys.Date()`"
 weight : 6
 chapter : false

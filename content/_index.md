@@ -43,6 +43,6 @@ chapter : false
 #### Content
 
 1. [Introduction](/aws-ws/1-intro/)
-2. [Prepairation](/aws-ws/2-prepair/)
+2. [Workshop Prepairation](/aws-ws/2-prepair/)
 3. [Configuration](/aws-ws/3-config)
 4. [Cleanup](/aws-ws/4-cleanup/)

@@ -1,5 +1,5 @@
 ---
-title : "Prepairation"
+title : "Workshop Prepairation"
 date : "`r Sys.Date()`"
 weight : 2
 chapter : false
