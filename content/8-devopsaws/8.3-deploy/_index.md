@@ -50,3 +50,67 @@ aws deploy push --application-name CodeDeployDemo --s3-location s3://aws-devops-
 ```
 {{% /expand%}}
 
+![83](/aws-ws/images/8-devopsaws/83/4.png?featherlight=false&width=50pc)
+
+- Add Tag to EC2 instance
+  - Key:    Name   - Value:  webserver
+  - Key:    Environment   - Value:  Development
+
+2. First deployment
+
+- IAM Role - AWS Services - CodeDeploy
+  - Role name: **CodeDeployRole**   
+  
+- IAM User: (for AWS CLI)
+  - Create Access key ID & Secret access key
+
+- AWS CLI configure:
+  - aws configure --profile aws-devops
+    - AWS Access Key ID:
+    - AWS Secret Access Key: 
+    - Default region name: json
+
+- Create S3 buccket and enable versioning : **aws-devops-cicddemo**
+  - configure in CodeDeployConfig.md
+
+- Up load files into S3: **app.zip**
+
+![83](/aws-ws/images/8-devopsaws/83/6.png?featherlight=false&width=50pc)
+
+
+Developer Tools > CodeDeploy > Applications > Create application
+
+- Application name: **CodeDeployDemo**
+- Code platform: EC2/On-premises
+  - Deployment groups: Create deployment group
+    - Deployment group name:    **MyDevInstances**
+    - Service role: /CodeDeployDemo
+    - Deployment type: In-place
+    - Environment configuration
+      - Amazon EC2 instances
+        - Key: Environment  - Value: Development
+        
+      ![83](/aws-ws/images/8-devopsaws/83/5.png?featherlight=false&width=50pc)
+        - Create deployment group
+    - Create deployment
+      - Revision type:  My application is stored in Amazon S3
+      - Revision location: ..../app.zip
+        - Create Deployment
+
+      ![83](/aws-ws/images/8-devopsaws/83/7.png?featherlight=false&width=50pc)
+
+- SSH to EC2 instance
+  - cd /var/www/htmll
+  - ls
+    - **index.html**
+
+- EC2 instance check Security Group
+  - Inbound rules:
+    - HTTP / SSH       80/22        0.0.0.0/0
+
+- Check via DNS
+       ![83](/aws-ws/images/8-devopsaws/83/8.png?featherlight=false&width=50pc)
+
+
+3. Configurations
+
