@@ -6,6 +6,12 @@ chapter : false
 pre : " <b> 8.2 </b> "
 ---
 
+
+#### Overview
+
+- AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.
+-  It is serverless. So you don't need to provision or manage any servers. CodeBuild scales continuously, and processes multiple builds concurrently.
+
 |  CodeBuild | Overview |
 |---|---|
 |![82](/aws-ws/images/8-devopsaws/82/0.png?featherlight=false&width=50pc) | ![82](/aws-ws/images/8-devopsaws/82/01.png?featherlight=false&width=50pc) |

@@ -6,7 +6,12 @@ chapter : false
 pre : " <b> 8.1 </b> "
 ---
 
+
 ![81](/aws-ws/images/8-devopsaws/81/1.png?featherlight=false&width=50pc)
+
+#### Overview
+
+- A version control is the ability to understand the various changes that happen to the code over time. The key to version control is that you should be able to roll back to the commits. And all of these can be enabled using a version control system. And a very popular one is called Git.
 
 -  Version control is the ability to understand the various changes that happened to the code overtime (and possibly roll back)
 

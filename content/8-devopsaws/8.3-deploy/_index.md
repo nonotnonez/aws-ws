@@ -6,7 +6,10 @@ chapter : false
 pre : " <b> 8.3 </b> "
 ---
 
-Updating ....
+#### Overview
+
+- With CodeDeploy, we can automate deployment on Amazon EC2 servers, on-prem servers, and serverless applications running on Lambda and on ECS. A very good feature of CodeDeploy is that you have minimal downtime for your applications, and you can also set up blue-green deployments for EC2 instances. 
+
 
 |  CodeDeploy | Overview |
 |---|---|
