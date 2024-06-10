@@ -9,9 +9,51 @@ pre : " <b> 7.4 </b> "
 #### LinkedIn
 Source: [AWS: Deployment, Provisioning, and Automation](https://www.linkedin.com/learning/aws-deployment-provisioning-and-automation/running-a-cloudformation-template?autoSkip=true&resume=false&u=103729754)
 
-1. Write a CF template: **single_instace.yaml**
+1. Write a CF template: **single_instance.yaml**
 {{%expand "Expand code here" %}}
-![74](/aws-ws/images/7/74/10.png?featherlight=false&width=50pc) 
+```sh
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Description: A test stack for demonstrating Cloudformation
+Parameters:
+  Subnet:
+    Description: Subnet in which to place the resources
+    Type: AWS::EC2::Subnet::Id
+  IamInstanceProfile:
+    Description: IAM profile for instance
+    Type: String
+  SecurityGroup:
+    Description: This group will be applied to both the ELB and instances in the ASG
+    Type: AWS::EC2::SecurityGroup::Id
+  InstanceType:
+    Description: The instance type for the Launch Config
+    Type: String
+    Default: t2.micro
+    AllowedValues:
+    - t2.nano
+    - t2.micro
+    - t2.small
+    - t2.medium
+    - t2.large
+Resources:
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash -xe
+          sudo amazon-linux-extras install nginx1 -y
+          sudo service nginx start
+      ImageId: ami-087c17d1fe0178315
+      InstanceType:
+        Ref: InstanceType
+      SecurityGroupIds:
+        - Ref: SecurityGroup
+      SubnetId:
+        Ref: Subnet
+      IamInstanceProfile:
+        Ref: IamInstanceProfile
+```
 {{% /expand%}}
 
 2. Running a CF template
@@ -37,9 +79,183 @@ Source: [AWS: Deployment, Provisioning, and Automation](https://www.linkedin.com
 ![74](/aws-ws/images/7/74/12.png?featherlight=false&width=50pc) 
 ![74](/aws-ws/images/7/74/13.png?featherlight=false&width=50pc) 
 
-3. Updating a CF Stack
+3. Updating a CF Stack (change sets)
+- Template: **instanceandsecuritygroup.yml** . 
+
+{{%expand "Check code here" %}}
+```sh
+Description: >
+    Template for creating a single ec2 instance and an attached security group.  Also allows you to specify existing security groups to attach.
+Parameters:
+
+    InstanceName:
+        Description: The name tag for the instance
+        Type: String
+
+    VPC:
+        Type: AWS::EC2::VPC::Id
+        Description: Choose which VPC the security group should be deployed to
+
+    Subnet:
+        Description: The subnet in which to deploy the instance
+        Type: AWS::EC2::Subnet::Id   
+
+    Contact:
+        Description: Contact email
+        Default: foo@bar.com
+        Type: String    
+
+    Keyname:
+        Description: Key to provision for SSHing into the ec2 instance
+        Type: AWS::EC2::KeyPair::KeyName   
+
+    InstanceAMI:
+        Description: AMI for the instance
+        Type: String
+
+    InstanceType:
+        Description: what instance type the ec2 instance should use
+        Default: t2.nano
+        AllowedValues: 
+          - t2.nano
+          - t2.micro
+          - t2.small
+        Type: String
 
 
+
+Resources:
+
+  MySecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow world SSH access to this instance.
+      VpcId: !Ref VPC
+      SecurityGroupIngress:
+      - IpProtocol: tcp
+        FromPort: '443'
+        ToPort: '443'
+        CidrIp: 0.0.0.0/0
+
+
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: 
+        Ref: InstanceAMI
+      InstanceType:
+        Ref: InstanceType
+      SecurityGroupIds:
+        - Ref: MySecurityGroup
+      KeyName:
+        Ref: Keyname
+      SubnetId:
+        Ref: Subnet
+      Tags:
+        - Key: Contact
+          Value: !Ref Contact
+        - Key: Name
+          Value: !Ref InstanceName  
+
+
+Outputs:
+  InstanceID:
+    Description: The Instance ID
+    Value: !Ref MyInstance
+```
+{{% /expand%}}
+
+- CloudFormation > Stacks > Create stack > With new resources (standard)
+- Template is ready > Upload a template file : **instance-and-security-group.yml**
+  - Stack name: **InstanceAndSecurityGroup**
+  - InstanceAMI: amo-01cc... *(Check AMI)*
+  - InstanceName: AmazonLinuxInstance
+  - InstanceType: **t2.nano**
+  - Keyname: demo-key
+  - Subnet: 172.31.32.0/20
+  - VPC:  172.31.0.0/16 *(defaultVPC)*
+  - NEXT > CREATE STACK
+  
+![74](/aws-ws/images/7/74/14.png?featherlight=false&width=50pc) 
+![74](/aws-ws/images/7/74/15.png?featherlight=false&width=50pc) 
+
+- Update Stack
+  - Stack name: **InstanceAndSecurityGroup**
+    - Stack actions:
+      - Create change set for current stack
+        - Use current template > Change InstanceAMI
+        - Create change set 
+          - Change set name:  **OperatingSystemChange**
+          - Create change set
+
+![74](/aws-ws/images/7/74/16.png?featherlight=false&width=50pc) 
+![74](/aws-ws/images/7/74/17.png?featherlight=false&width=50pc) 
+
+  - Execute change set / Roll back
+
+![74](/aws-ws/images/7/74/18.png?featherlight=false&width=50pc) 
+![74](/aws-ws/images/7/74/19.png?featherlight=false&width=50pc) 
+
+1. Custom resources in CF
+
+- IAM Role - Role name: **LambdaS3FullAccessRole**
+  - Permissions:  AmazonS3FullAccess
+
+- **custom-resource-demo.yml**
+{{%expand "check code here" %}}
+```sh
+Description: >
+    Simple custom resource demo
+Parameters:
+
+    InputMessage:
+      Type: String
+      Description: An input to the custom resource
+      Default: Hello function!    
+
+    RoleForLambda:
+        Description: ARN of the role you created
+        Type: String
+
+
+Resources:
+
+  MyCustomResourceFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Code:
+        ZipFile: |
+          var response = require('cfn-response');
+          var aws = require("aws-sdk");
+          exports.handler = function(event, context) {
+            var input = event.ResourceProperties.InputParameter;
+            var responseData = {msg: "hello world!", msg2: input + " --received from caller"};
+            response.send(event, context, response.SUCCESS, responseData);
+          };
+      Handler: index.handler
+      Timeout: 30
+      Runtime: nodejs14.x
+      Role: !Ref RoleForLambda
+
+  MyCustomResourceCallout:
+    Type: Custom::LambdaCallout
+    Properties:
+      ServiceToken: !GetAtt MyCustomResourceFunction.Arn
+      InputParameter: !Ref InputMessage
+
+Outputs:
+  OutputFromFunction:
+    Description: Output from the custom function
+    Value: !GetAtt MyCustomResourceCallout.msg
+
+  ModifiedInputReturned:
+    Description: Pipe out the input so we know we got it
+    Value: !GetAtt MyCustomResourceCallout.msg2
+```
+{{% /expand%}}
+- CloudFormation > Stacks > Create stack > With new resources (standard)
+
+...
 
 ----
 #### FCJ
