@@ -72,6 +72,8 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/4-cleanup/4.1-ec2/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/10-awsview/10.4-iic/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/4-cleanup/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/4-cleanup/4.2-jenkins/</loc>

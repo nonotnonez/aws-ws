@@ -7,12 +7,6 @@ pre : " <b> 10.3 </b> "
 ---
 
 #### Best practices
-
-**Overview**
-
-
-**Process**
-
 - Managements & Govermance > AWS Control Tower setup > Set up landding zone
   - Home region: ES East (N.Virginia)
   - Region deny settings: Not Enabled
