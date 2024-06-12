@@ -8,6 +8,7 @@ pre : " <b> 10.7 </b> "
 
 #### Best practices
 
+![107](/aws-ws/images/10/107/5.png?featherlight=false&width=90pc)
 
 #### NACLs and Security Groups
 
@@ -33,4 +34,17 @@ pre : " <b> 10.7 </b> "
 
 ![107](/aws-ws/images/10/107/2.png?featherlight=false&width=90pc)
 
-- Security Groups
+- **Security Groups**
+  - Control what traffic is allowd to reach and leave resources
+  - Can only contain allow rules
+  - Anything not explicitly allowed is denied
+  - Can be used by multiple resources
+  - Multiple security groups can be associated with a resource
+  - Are stateful  
+    - They maintain traffic state infomation
+
+![107](/aws-ws/images/10/107/3.png?featherlight=false&width=90pc)
+
+For example, if outbound traffic is allowed by a security group rule, the corresponding response traffic is automatically allowed
+
+![107](/aws-ws/images/10/107/4.png?featherlight=false&width=90pc)
