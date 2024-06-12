@@ -84,21 +84,31 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.5-networking/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/10-awsview/10.5-vpc/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/6-wsaudio/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.6-vpc/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/10-awsview/10.6-vpn/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.7-database/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/7-fcj/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/10-awsview/10.7-secu/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.8-security/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/8-devopsaws/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/10-awsview/10.8-key/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/9-awssecu/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.9-efs/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/10-awsview/10.9-data/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/10-awsview/</loc>
   </url><url>
