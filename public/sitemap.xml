@@ -50,6 +50,8 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/3-config/3.1-iac/3.1.2-s3/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/13-ha/13.2-sns/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/10-awsview/10.3-tower/</loc>
@@ -59,6 +61,8 @@
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.3-computing/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/3-config/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/13-ha/13.3-bean/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/12-automate/12.3-event/</loc>
   </url><url>
