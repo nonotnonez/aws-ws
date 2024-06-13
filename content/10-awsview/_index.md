@@ -36,6 +36,35 @@ pre : " <b> 10. </b> "
   - Securing keys and Credentials (AWS Key Management Service - KMS)
   - Security data in transit (AWS Certificate Manager - ACM )
 ----
+- Question
+  - 1. How does IAM Identity Center help in simplifying access management for users across multiple AWS accounts and SAML-enabled cloud applications?
+    - It centralizes access management through a single sign-on experience, reducing the need for multiple sets of credentials.
+  - 2. Which connectivity option in AWS allows customers to establish a dedicated private connection from their on-premises network to their VPC?
+    -  AWS Direct Connect
+  - 3. How does AWS Direct Connect differ from AWS Site-to-Site VPN in terms of connectivity?
+    - AWS Direct Connect provides a dedicated connection bypassing the public internet, while AWS Site-to-Site VPN establishes a secure connection over the public internet.
+  - 4. How do network ACLs differ from security groups?
+    - Network ACLs operate at the subnet level and support both allow and deny rules, while security groups operate at the resource level and only support allow rules.
+  - 5. Which of these is true about AWS Key Management Service (KMS)?
+    - AWS KMS provides AWS-managed keys, created automatically by the service, and customer-managed keys, created by the user.
+    - AWS KMS supports both symmetric and asymmetric keys for cryptographic operations.
+  - 6. Which of these is true about AWS Secrets Manager?
+    - Secrets stored in AWS Secrets Manager are encrypted at rest using AWS KMS keys.
+    - Secrets Manager allows you to manage and retrieve database and application credentials, API keys, OAuth tokens, SSH keys and other secrets.
+  - 7. What type of domain names can ACM certificates secure?
+    - single, multiple, and wildcard domain names
+  - 8. Why should the root AWS account not be used for everyday activities?
+    - It increases the risk of unauthorized access and misuse.
+  - 9. How does the best practice recommendation of the principle of least privilege help when granting access permissions in AWS?
+    - It grants only the minimum permissions required for a task or job role to enhance security.
+  - 10. How do IAM policies affect access when multiple policies are associated with a single AWS user?
+    - The user's effective permissions are the sum total (cumulative effect) of all the attached policies.
+  - 11. Why might an organization choose to use AWS Organizations for managing multiple AWS accounts?
+    - to enable centralized billing, management of permissions, and policy enforcement across all accounts
+  - 12. How do AWS Control Tower's log archive account and audit account enhance security and compliance?
+    - They centralize the storage of logs and facilitate the auditing process.
+
+----
 #### Design a Strategy for Secure Access
    - **Implement strong identity and access management**
       - Manage identities within AWS or use an external identity provider
