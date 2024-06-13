@@ -12,11 +12,15 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/6-wsaudio/6.1-devsecops/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/12-automate/12.1-cf/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/8-devopsaws/8.1-commit/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/2.1-docker/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/3-config/3.1-iac/3.1.1-ec2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/13-ha/13.1-elb/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/3-config/3.1-iac/</loc>
   </url><url>
@@ -30,8 +34,6 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.8-security/5.8.1-learn/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/11-cost/</loc>
-  </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/2.2-aws/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/10-awsview/10.2-org/</loc>
@@ -39,6 +41,8 @@
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.2-cloudfirst/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/8-devopsaws/8.2-build/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/12-automate/12.2-lambda/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/7-fcj/7.2-lambda/</loc>
   </url><url>
@@ -55,6 +59,8 @@
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.3-computing/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/3-config/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/12-automate/12.3-event/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.3-practice/</loc>
   </url><url>
@@ -78,6 +84,10 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/4-cleanup/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/12-automate/12.4-step/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/12-automate/12.5-sm/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/4-cleanup/4.2-jenkins/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/</loc>
@@ -87,6 +97,8 @@
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.5-networking/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/10-awsview/10.5-vpc/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/12-automate/12.6-as/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/6-wsaudio/</loc>
   </url><url>
@@ -118,7 +130,17 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.11-healscal/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/11-cost/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/12-automate/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.12-ha/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/13-ha/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/14-perform/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/15-ai/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/categories/</loc>
   </url><url>
