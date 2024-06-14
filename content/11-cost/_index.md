@@ -6,6 +6,16 @@ chapter : false
 pre : " <b> 11. </b> "
 ---
 
+#### Chapter Quiz
+
+1. How does a tagging policy contribute to cost optimization?
+   - It helps in tracking costs and identifying resources by owner, project, and other attributes.
+2. How can **CloudWatch** help in rightsizing EC2 instances?
+   - to monitor resource usage and identify opportunities for downsizing
+3. How can lifecycle policies in Amazon S3 help reduce storage costs?
+   - by transitioning data to cheaper storage classes and deleting expired data
+4. When should you use **AWS Budgets**?
+   - when you want to set a monthly cost budget with alerts
 
 #### Best Practices
 

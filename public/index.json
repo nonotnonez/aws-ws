@@ -39,7 +39,7 @@
 	"title": "CloudFormation",
 	"tags": [],
 	"description": "",
-	"content": "Best practices "
+	"content": "AWS CloudFormation "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/8-devopsaws/8.1-commit/",
@@ -77,7 +77,7 @@
 	"content": "Infrastructure as Code (IaC) with Terraform and AWS provides scalable, consistent, and automated infrastructure management. It enables version control, cost optimization, and flexibility in defining complex configurations. With modularity and reusability, fast iteration, and vendor agnosticism, it ensures reliable and efficient cloud resource provisioning, driving business agility and innovation.\nContent EC2 S3 "
 },
 {
-	"uri": "http://localhost:1313/aws-ws/10-awsview/10.1-iam/",
+	"uri": "http://localhost:1313/aws-ws/10-awssecuview/10.1-iam/",
 	"title": "Identity and Access Management",
 	"tags": [],
 	"description": "",
@@ -119,7 +119,7 @@
 	"content": "Amazon Web Services (AWS) is a comprehensive and widely used cloud computing platform provided by Amazon. It offers a vast array of services, allowing individuals and businesses to build and deploy scalable applications and services without the need to invest in physical infrastructure\nAWS CLI The AWS Command Line Interface (CLI) is a powerful tool provided by Amazon Web Services (AWS) that allows you to interact with AWS services directly from your command line or terminal It provides a convenient and scriptable way to manage your AWS resources without needing to use the AWS Management Console AWS CLI configuration overview\nAWS CLI User: tf-cli\r# Create User docker-compose run --rm aws iam create-user --user-name tf-cli # List Users docker-compose run --rm aws iam list-users # Delete User docker-compose run --rm aws iam delete-user --user-name tf-cli # create access key for user docker-compose run --rm aws iam create-access-key --user-name tf-cli \u0026gt; tf_cli-access_key.json # List Access key or User docker-compose run --rm aws iam list-access-keys --user-name tf-cli # Delete Access key docker-compose run --rm aws iam delete-access-key --user-name tf-cli --access-key-id AKIAZI2LEZRR5T3WDM5U # Attach admin access: docker-compose run --rm aws iam attach-user-policy --user-name tf-cli --policy-arn arn:aws:iam::aws:policy/AdministratorAccess # User Permission docker-compose run --rm aws iam list-attached-user-policies --user-name tf-cli # Detach Policy docker-compose run --rm aws iam detach-user-policy --user-name tf-cli --policy-arn arn:aws:iam::aws:policy/AdministratorAccess # Create Policy custom file ec2-limited-access-policy.json # Create a Custom IAM policy: docker-compose run --rm aws iam create-policy --policy-name EC2FullAccessAPSouthEast1 --policy-document file://ec2-limited-access-policy.json # Attach Policy docker-compose run --rm aws iam attach-user-policy --user-name tf-cli --policy-arn arn:aws:iam::637423373411:policy/EC2FullAccessAPSouthEast1 Configuration Prepair and run docker compose file\ndocker-compose run --rm aws --version AWS Access \u0026amp; Secret Create keypair to access AWS Instances: tf-cli-keypair.pem\ndocker-compose run --rm aws ec2 create-key-pair --key-name tf-cli-keypair --query \u0026#39;KeyMaterial\u0026#39; --output text \u0026gt; tf-cli-keypair.pem Create AWS Account for Terraform use AWS CLI: tf-cli\ndocker-compose run --rm aws iam create-user --user-name tf-cli AWS Checking keypair: Create Access Key \u0026amp; export to local\ndocker-compose run --rm aws iam create-access-key --user-name tf-cli \u0026gt; tf_cli-access_key.json Create policy and configure to allow access EC2 and Limit Region\nCreate a custom policy file: ec2-limited-access-policy.json { \u0026#34;Version\u0026#34;: \u0026#34;2012-10-17\u0026#34;, \u0026#34;Statement\u0026#34;: [ { \u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;, \u0026#34;Action\u0026#34;: \u0026#34;ec2:*\u0026#34;, \u0026#34;Resource\u0026#34;: \u0026#34;*\u0026#34;, \u0026#34;Condition\u0026#34;: { \u0026#34;StringEquals\u0026#34;: { \u0026#34;ec2:Region\u0026#34;: \u0026#34;ap-southeast-1\u0026#34; } } } ] } Create a IAM policy: EC2FullAccessAPSouthEast1 docker-compose run --rm aws iam create-policy --policy-name EC2FullAccessAPSouthEast1 --policy-document file://ec2-limited-access-policy.json Attach the Policy to the IAM User: (tf-cli) docker-compose run --rm aws iam attach-user-policy --user-name tf-cli --policy-arn arn:aws:iam::637423373411:policy/EC2FullAccessAPSouthEast1 AWS Checking User: "
 },
 {
-	"uri": "http://localhost:1313/aws-ws/10-awsview/10.2-org/",
+	"uri": "http://localhost:1313/aws-ws/10-awssecuview/10.2-org/",
 	"title": "AWS Organizations",
 	"tags": [],
 	"description": "",
@@ -182,7 +182,7 @@
 	"content": "Home | Container | AWS | Terraform | Git | Local\nWorkshop-101 Overview : The project focuses on automating the deployment of a server in the AWS Cloud using AWS CLI, Docker Compose, and Terraform. Terraform is used to define and provision the necessary infrastructure components, while Docker Compose is employed to manage the Docker containers for the server application. The AWS CLI is used for interacting with AWS services programmatically. By integrating these tools, the project aims to streamline the deployment process, reduce manual effort, and ensure consistency and scalability in the AWS environment. Workflow : process link AWS Workshop Practice View Project at : Cloud DevSecOps with Hashicorp, Palo Alto Networks \u0026amp; AWS\nOverview :\nThis workshop will demonstrate how to leverage infrastructure as code (IaC) and DevSecOps patterns to automate, scale, and improve the security posture of cloud infrastructure and applications. We will create a pipeline that ensures our configurations are secure and compliant from code to cloud. Workshop-102 Overview : CICD is processing \u0026hellip; Workflow : process link Contents Docker AWS Teraform Git Local "
 },
 {
-	"uri": "http://localhost:1313/aws-ws/10-awsview/10.3-tower/",
+	"uri": "http://localhost:1313/aws-ws/10-awssecuview/10.3-tower/",
 	"title": "AWS Control Tower",
 	"tags": [],
 	"description": "",
@@ -214,7 +214,7 @@
 	"title": "Elastic Beanstalk",
 	"tags": [],
 	"description": "",
-	"content": "Host Apps in the Cloud Manage both infrastructure and application Loose coupling aims to minimize the dependencies between components. Amazon Simple Queue Service (SQS) is a queing service SQS works on a polling mechanism "
+	"content": "Best Practices IAM : Policies: ElasticBeanstalk-Instance-Policy Roles: ElasticBeanstalk-Instance-Role AWS Service \u0026gt; Use case: EC2 Policies: ElasticBeanstalk-Instance-Policy Compute \u0026gt; Elastic Beanstalk \u0026gt; Create Application Configure environment Environment tier \u0026gt; Web server environment Application name: demoapp Environment name: Demoapp-env Domain: demoapp \u0026gt; Check availability Platform: Python Application code: Sample application Configuration presets: Single instance (free tier eligble) NEXT Configure service access Service access: Existing service roles: aws-elasticbeanstalk-service-Role EC2 instance profile: aws-elasticbeanstalk-Instance-Role Configure instance traffic and scaling VPC: 172.31.0.0/16 (default) Instance subnets: 172.31.0.0/20 - us-east-1a 172.31.80.0/20 - us-east-1b NEXT Instances Volumes: SSD Size: 8 GB CloudWatch monitor: 5 minutes IMDS: Check Deactivated Security Groups: default Auto scaling group: Single instance Feet composition: On-Demand instance NEXT Configure updates, monitoring, and logging System: Basic Managed updates: Uncheck Adtivated NEXT SUBMIT Review Host Apps in the Cloud Manage both infrastructure and application Use a managed service to handle the infrastructure so developers can focus on the application "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/12-automate/12.3-event/",
@@ -243,6 +243,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Terraform is a open-source tool used to build, modify, and version control infratrucrure\nOverview Provider(provider.tf): Enables Terrafrom to interact with cloud providers and other APIs Terraform (versions.tf): Sets version constaints for Terraform and optionally maps provides to a source address and version constaint Variables (variable.tf): Input variables define reusable values and work like function arguments in general-purpose programming languages Resource (main.tf): Resource blocks describe infrastructure objects like VPCs, subnets, route tables, and gateways Data : Data sources allow Terraform to ultilize information form resources that were defined outside of Terraform (or defined a different Terraform configuration) Output: Outputs return structured data form your configuration and work like return values in generaral-purpose programming languages Terraform.tfvars: To set lots of variables, it is more convenient to specify their values in a variable definitions file Command terraform init [options]: command initializes a working directory containing Terraform configuration files. terraform plan [options]: command creates an execution plan, which lets you preview the changes that Terraform plans to make to your infrastructure. terraform apply [options] [plan file]: command executes the actions proposed in a Terraform plan terraform destroy [options]: command is a convenient way to destroy all remote objects managed by a particular Terraform configuration. Run Terraform in containter: Run docker compose:\ndocker-compose run --rm terraform version Run configure:\nProvider (AWS): versions.tf\nterraform { required_providers { aws = { source = \u0026#34;hashicorp/aws\u0026#34; version = \u0026#34;~\u0026gt; 4.16\u0026#34; } } required_version = \u0026#34;\u0026gt;= 1.2.0\u0026#34; } Security credential variables: variables.tf\nvariable \u0026#34;access_key\u0026#34; { type = string sensitive = true } variable \u0026#34;secret_key\u0026#34; { type = string sensitive = true } variable \u0026#34;region\u0026#34; { type = string default = \u0026#34;ap-southeast-1\u0026#34; } Terraform init:\ndocker-compose run --rm terraform init "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/13-ha/13.4-fargate/",
+	"title": "AWS Fargate",
+	"tags": [],
+	"description": "",
+	"content": "\nAmazon Elastic Container (ECS) is a container management service. Fargate task do not share the underlying kernel, CPU, memory, or elastic network interface Each Fargate task runs in its own isolated boundary "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.4-ceconomics/",
@@ -287,7 +294,7 @@
 	"content": "Clean up resources We will process to clearn up all the resources\nTerraform: Run docker compose:\ndocker-compose run --rm terraform destroy --auto-approve AWS Checking "
 },
 {
-	"uri": "http://localhost:1313/aws-ws/10-awsview/10.4-iic/",
+	"uri": "http://localhost:1313/aws-ws/10-awssecuview/10.4-iic/",
 	"title": "IAM Identity Center",
 	"tags": [],
 	"description": "",
@@ -343,7 +350,14 @@
 	"content": "Business Request Help the bank setup a secure networking environment which allows communication between resources and the internet.\nLearning Objectives Define key features of VPCs, subnets, internet gateways and route tables. Describe the benefits of using Amazon VPCs. State the basics of CIDR block notation and IP addressing. Explain how VPC traffic is routed and secured using gateways, network access control lists, and security groups. "
 },
 {
-	"uri": "http://localhost:1313/aws-ws/10-awsview/10.5-vpc/",
+	"uri": "http://localhost:1313/aws-ws/13-ha/13.5-storage/",
+	"title": "Storage",
+	"tags": [],
+	"description": "",
+	"content": "\nMost S3 storage classes are designed for at leat 99.9% availability Amazon EBS provides block-level storage volumes for EC2 instances Consider cost when choosing cloud storage "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/10-awssecuview/10.5-vpc/",
 	"title": "VPC and Subnets",
 	"tags": [],
 	"description": "",
@@ -371,11 +385,25 @@
 	"content": "VPCs Amazon VPC Overview Amazon VPC Concepts Amazon VPC Security Amazon VPC - Internet Connectivity Amazon VPC Peering Connections "
 },
 {
-	"uri": "http://localhost:1313/aws-ws/10-awsview/10.6-vpn/",
+	"uri": "http://localhost:1313/aws-ws/13-ha/13.6-db/",
+	"title": "Database",
+	"tags": [],
+	"description": "",
+	"content": "Security Databases against Failures "
+},
+{
+	"uri": "http://localhost:1313/aws-ws/10-awssecuview/10.6-vpn/",
 	"title": "VPN and Direct Connect",
 	"tags": [],
 	"description": "",
 	"content": "Best practices Use site-to-site VPN if you need a cost-effective solution and your applications aren\u0026rsquo;t demanding.\nPrefer Direct Connect if you need a dedicated connection and your applications are data/performance-intensive\nVPN and Direct Connect AWS Site-to-Site VPN Secure connect between on-premises equiment and your VPCs Created within your AWS account and attached to a VPC Virtual private gateway is the termination point on the AWS side Created within your AWS account and attached to a VPC The customer gateway is a physical device or software application on your side Each site-to-site VPN has two tunnels, each terminating in a different Availability Zone When one tunnel becomes unavailable, network traffic is automatically routed to the other tunnel Architectural Considerations\nPerformance Cost Security AWS Direct Connect\nDedicated connection between your on-premises network and AWS Bypass the public internet Consider when you have applications that need high performance and low latency AWS Direct Connect Pricing\nCapacity - maximum rate that data can be transferred Port hours - time that a port is provisioned https://aws.amazon.com/directconnect/pricing/ Use site-to-site VPN if you need a cost-effective solution and your applications aren\u0026rsquo;t demanding.\nPrefer Direct Connect if you need a dedicated connection and your applications are data/performance-intensive\n"
+},
+{
+	"uri": "http://localhost:1313/aws-ws/13-ha/13.7-backup/",
+	"title": "Backing Up",
+	"tags": [],
+	"description": "",
+	"content": "AWS Backup AWS Backup Settings \u0026gt; Configure resources Backup plans \u0026gt; Create backup plan Build a new plan Backup plane name: Daily-EBS-Snapshot Schedule Backup rule name: backup-at-11AM Total retention period: 1 Days CREATE PLAN \u0026gt; ASSIGN RESOURCES Backup plans \u0026gt; Daily-EBS-Snapshots \u0026gt; Assign resources name: daily-backups-for-all-ebs-volumes IAM role: Default role Defind resource selection : Include specific resource: EBS ASSIGNMENT RESOURCE Protectd resources \u0026gt; Create on-demanded backup Resource type: EBS Volume ID: vol-07c\u0026hellip; Backup windows \u0026gt; Create backup now \u0026gt; 1 Days CREATE ON-DEMAND BACKUP Security Databases against Failures AWS Backup allows you to centralize and automate backups across AWS services "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.7-database/",
@@ -392,7 +420,7 @@
 	"content": "First Cloud Journey Links: https://cloudjourney.awsstudygroup.com/\n1.Understand AWS CloudFormation Allows you to build and manage your data center via code\nAWS CloudFormation 2.AWS Elastic Load Balancers ELB 3.AWS Auto Scaling Auto Scaling 4.AWS Security Groups Auto Scaling 5.SSH Key Authentication Authentication "
 },
 {
-	"uri": "http://localhost:1313/aws-ws/10-awsview/10.7-secu/",
+	"uri": "http://localhost:1313/aws-ws/10-awssecuview/10.7-secu/",
 	"title": "Security Group and Network ACLs",
 	"tags": [],
 	"description": "",
@@ -413,7 +441,7 @@
 	"content": " CI/CD stands for continuous integration, and then continuous delivery or deployment. It is a method used to frequently and reliably deliver software applications "
 },
 {
-	"uri": "http://localhost:1313/aws-ws/10-awsview/10.8-key/",
+	"uri": "http://localhost:1313/aws-ws/10-awssecuview/10.8-key/",
 	"title": "Security keys and credentials",
 	"tags": [],
 	"description": "",
@@ -434,14 +462,14 @@
 	"content": "Business Request Help the city\u0026rsquo;s pet modeling agency share file data without provisioning or managing storage.\nLearning Objectives Summarize the different storage options available on AWS. Summarize the key features and benefits of Amazon EFS. Identify business use cases for Amazon EFS. Configure Amazon EFS endpoints to access centralized storage. "
 },
 {
-	"uri": "http://localhost:1313/aws-ws/10-awsview/10.9-data/",
+	"uri": "http://localhost:1313/aws-ws/10-awssecuview/10.9-data/",
 	"title": "Securing data in transit",
 	"tags": [],
 	"description": "",
 	"content": "Best practices AWS Certificates Manager (ACM) \u0026gt; Request certificate Domain name: example.com Validation method: DNS validation Key algorithm: RSA 2048 REQUEST Input certificate detail Securing data in transit Data in transit is secured using SSL/TLS certificates AWS Certificat Manager (ACM) allows you to provision and manage SSL/TLS certificates SSL/TLS\nSecure Sockets Layer (SSL) and Transport Layer Security (TLS) are cryptographic protocols that secure communications TLS is the successor of SSL Both protocols use certificates When you visit a website, your browser requests the server\u0026rsquo;s certificate Your browser verifies that the server certificate is issued by a trusted certificates authority (CA) CAs are widely recognized and trusted to issue SSL/TLS certificates Your browser is preinstalled with a list of trusted CAs After verifying the server\u0026rsquo;s identity, your browser establishes a secure channel using the public key in the certificate AWS Certificate Manager (ACM)\nAllows you to request a publicly trusted certificate Manages private SSL/TLS certificates Allows you to import certificates issued by third-party CAs Supported by Elastic Load Balancing, CloudFront, Elastic Beanstalk, API gateway, etc.. ACM Certificates\nACM certificates can secure: Single domain names like www.example.com Multiple domain names like www.example.com and www.example.net Trusted by major browsers: Chrome, firefox "
 },
 {
-	"uri": "http://localhost:1313/aws-ws/10-awsview/",
+	"uri": "http://localhost:1313/aws-ws/10-awssecuview/",
 	"title": "AWS &amp; Security Overview",
 	"tags": [],
 	"description": "",
@@ -466,14 +494,14 @@
 	"title": "Optimize Cost",
 	"tags": [],
 	"description": "",
-	"content": "Best Practices AWS Account \u0026gt; Billing and Cost Management\nPricing Calculator : Create Estimate Configure EC2 \u0026gt; SAVE AND ADD SERVICE Add Service Cost Explorer Report parameter Tag: Cost Center: Ex: Filter ID: 10011 | 10012 Save to report library Budget Cost Allocation Tags Cost and Usage Reports Data Exports Bills Strategies for optimizing costs Understand Pricing Models\nMost services have pay-as-you-go pricing Services have configuration options to optimize cotst For example: EC2 instances support On-Demand Instances, Saving Plans, and more Amazon S3 has storage classes with different pricing Rightsize your resources\nServices have configurations for different performance use cases Use the configuration that meets your requiements Undersizing can lead to performance issues, and oversizing can lead to unnecessary costs Audit refularly for underutilized and unsused resources Use Auto Scaling\nMany AWS services support auto scaling Utilize auto scaling to match supply with demand and optimize costs Manage Data Transfer Costs\nAvoid routing traffic over the internet when connecting AWS services Use VPC engpoints to keep traffic on the AWS network Use AWS Direct Connect to optimize data transfer costs between on-premises environment and AWS Implement Governance\nGovernance is critical for cost control Develop policies for resource provisioning Implement tagging policy to cateforize resources Use IAM to restrict user and application access Measure Spending\nUse tools to understand spending and receive recommendations For example, AWS Cost Explorer and Cost allocation tags Regularly audit to ensure compliance with governance policies and reduce unnecessary spending Reduce Compute Costs AWS Compute Services\nAmazon EC2 AWS Lambda Amazon Elastic Container Service (ECS) AWS Elastic Beanstalk Rightsize EC2 Instances\nEC2 instance families: Gerneral purpose Compute optimized Memory optimized Storage optimized Each instance family has many instance types/sizes Each instane type and family is optimized for specific use cases T3 is suitable for web servers and small databases C5 is suitable for batch processing, scientific modeling, and high-performance computing Use CloudWatch to monitor instance usage Downsize underutilized instances to reduce costs Utilize Spot Instances\nSpot Instance offer spare EC2 capacity at low rates - in some cases, up to 90% lower than On-Demand rates AWS may interrupt them with a two-minute warning Applications that can handle interuptions can use Spot Instances Use On-demand and Sport Instances to handle a workload If the Spot Instances are interrupted, On-Demand Instances can continue to operate Leverage Reserved Instances and Savings Plans\nReserved Instance and Savings Plans offer significant discounts Require one- or three-year commitment Ideal for long-term projects with predictable usage Implement Audo Scaling\nAuto scaling adds or removes instances to handle the workload Prevents under- or over-provisioning Adopt Serverless\nWith serverless (like AWS Lambda), you only pay when your code runs, reducing costs Create event-driven architectures Consolidate Workloads\nCombine multiple workloads into fewer instances Identify underutilized instances and evalute workloads for compatibility Consolicate and monitor performance to ensure expected outcomes Reduce Storage Costs Tools to track cost and usage "
+	"content": "Chapter Quiz How does a tagging policy contribute to cost optimization? It helps in tracking costs and identifying resources by owner, project, and other attributes. How can CloudWatch help in rightsizing EC2 instances? to monitor resource usage and identify opportunities for downsizing How can lifecycle policies in Amazon S3 help reduce storage costs? by transitioning data to cheaper storage classes and deleting expired data When should you use AWS Budgets? when you want to set a monthly cost budget with alerts Best Practices AWS Account \u0026gt; Billing and Cost Management\nPricing Calculator : Create Estimate Configure EC2 \u0026gt; SAVE AND ADD SERVICE Add Service Cost Explorer Report parameter Tag: Cost Center: Ex: Filter ID: 10011 | 10012 Save to report library Budget Cost Allocation Tags Cost and Usage Reports Data Exports Bills Strategies for optimizing costs Understand Pricing Models\nMost services have pay-as-you-go pricing Services have configuration options to optimize cotst For example: EC2 instances support On-Demand Instances, Saving Plans, and more Amazon S3 has storage classes with different pricing Rightsize your resources\nServices have configurations for different performance use cases Use the configuration that meets your requiements Undersizing can lead to performance issues, and oversizing can lead to unnecessary costs Audit refularly for underutilized and unsused resources Use Auto Scaling\nMany AWS services support auto scaling Utilize auto scaling to match supply with demand and optimize costs Manage Data Transfer Costs\nAvoid routing traffic over the internet when connecting AWS services Use VPC engpoints to keep traffic on the AWS network Use AWS Direct Connect to optimize data transfer costs between on-premises environment and AWS Implement Governance\nGovernance is critical for cost control Develop policies for resource provisioning Implement tagging policy to cateforize resources Use IAM to restrict user and application access Measure Spending\nUse tools to understand spending and receive recommendations For example, AWS Cost Explorer and Cost allocation tags Regularly audit to ensure compliance with governance policies and reduce unnecessary spending Reduce Compute Costs AWS Compute Services\nAmazon EC2 AWS Lambda Amazon Elastic Container Service (ECS) AWS Elastic Beanstalk Rightsize EC2 Instances\nEC2 instance families: Gerneral purpose Compute optimized Memory optimized Storage optimized Each instance family has many instance types/sizes Each instane type and family is optimized for specific use cases T3 is suitable for web servers and small databases C5 is suitable for batch processing, scientific modeling, and high-performance computing Use CloudWatch to monitor instance usage Downsize underutilized instances to reduce costs Utilize Spot Instances\nSpot Instance offer spare EC2 capacity at low rates - in some cases, up to 90% lower than On-Demand rates AWS may interrupt them with a two-minute warning Applications that can handle interuptions can use Spot Instances Use On-demand and Sport Instances to handle a workload If the Spot Instances are interrupted, On-Demand Instances can continue to operate Leverage Reserved Instances and Savings Plans\nReserved Instance and Savings Plans offer significant discounts Require one- or three-year commitment Ideal for long-term projects with predictable usage Implement Audo Scaling\nAuto scaling adds or removes instances to handle the workload Prevents under- or over-provisioning Adopt Serverless\nWith serverless (like AWS Lambda), you only pay when your code runs, reducing costs Create event-driven architectures Consolidate Workloads\nCombine multiple workloads into fewer instances Identify underutilized instances and evalute workloads for compatibility Consolicate and monitor performance to ensure expected outcomes Reduce Storage Costs Tools to track cost and usage "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/12-automate/",
 	"title": "Automate Infrastructure",
 	"tags": [],
 	"description": "",
-	"content": "Best Practices "
+	"content": "Consider Automation "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.12-ha/",
@@ -487,7 +515,7 @@
 	"title": "Resilience and High Availiability",
 	"tags": [],
 	"description": "",
-	"content": "Design for Failure RTO and RPO "
+	"content": "Chapter Quiz How does a read replica contribute to the resilience of a database in Amazon RDS? by offloading read queries and serving as a backup in case of primary instance failure What feature in Amazon RDS and Amazon Aurora enables seamless transition between production and staging environments for databases? Blue/Green deployment In which scenario is a Gateway load balancer recommended? when using third-party virtual appliances for network traffic inspection Which AWS services are commonly used for decoupling and creating event-based architectures? imple Notification Service (SNS) and Simple Queue Service (SQS) How does Simple Queue Service (SQS) help in creating a decoupled application architecture? It acts as a message buffer between sender and receiver applications. Which AWS service allows developers to focus only on the application code while handling deployment details like capacity provisioning and load balancing? Elastic Beanstalk What is the benefit of using Amazon EC2 Instances as the launch type for ECS? It provides more control over the underlying infrastructure, allowing for customization. Which AWS storage service allows on-premises systems to store and retrieve objects in Amazon S3? Storage Gateway How is Recovery Time Objective (RTO) defined? the maximum acceptable delay between service interruption and restoration Why is it recommended to build loosely coupled architectures? to contain failures to only affected components and allow independent scaling How does distributing workloads across multiple Availability Zones contribute to system resilience? It minimizes the impact of failures in a single location. Design for Failure RTO and RPO "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/14-perform/",

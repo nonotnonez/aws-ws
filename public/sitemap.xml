@@ -24,7 +24,7 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/3-config/3.1-iac/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/10-awsview/10.1-iam/</loc>
+    <loc>http://localhost:1313/aws-ws/10-awssecuview/10.1-iam/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/1-intro/</loc>
   </url><url>
@@ -36,7 +36,7 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/2.2-aws/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/10-awsview/10.2-org/</loc>
+    <loc>http://localhost:1313/aws-ws/10-awssecuview/10.2-org/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.2-cloudfirst/</loc>
   </url><url>
@@ -54,7 +54,7 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/10-awsview/10.3-tower/</loc>
+    <loc>http://localhost:1313/aws-ws/10-awssecuview/10.3-tower/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/8-devopsaws/8.3-deploy/</loc>
   </url><url>
@@ -72,6 +72,8 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/2-prepair/2.3-terraform/</loc>
   </url><url>
+    <loc>http://localhost:1313/aws-ws/13-ha/13.4-fargate/</loc>
+  </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.4-ceconomics/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/7-fcj/7.4-cf/</loc>
@@ -84,7 +86,7 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/4-cleanup/4.1-ec2/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/10-awsview/10.4-iic/</loc>
+    <loc>http://localhost:1313/aws-ws/10-awssecuview/10.4-iic/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/4-cleanup/</loc>
   </url><url>
@@ -100,7 +102,9 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.5-networking/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/10-awsview/10.5-vpc/</loc>
+    <loc>http://localhost:1313/aws-ws/13-ha/13.5-storage/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/10-awssecuview/10.5-vpc/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/12-automate/12.6-as/</loc>
   </url><url>
@@ -108,27 +112,31 @@
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.6-vpc/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/10-awsview/10.6-vpn/</loc>
+    <loc>http://localhost:1313/aws-ws/13-ha/13.6-db/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/10-awssecuview/10.6-vpn/</loc>
+  </url><url>
+    <loc>http://localhost:1313/aws-ws/13-ha/13.7-backup/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.7-database/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/7-fcj/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/10-awsview/10.7-secu/</loc>
+    <loc>http://localhost:1313/aws-ws/10-awssecuview/10.7-secu/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.8-security/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/8-devopsaws/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/10-awsview/10.8-key/</loc>
+    <loc>http://localhost:1313/aws-ws/10-awssecuview/10.8-key/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/9-awssecu/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.9-efs/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/10-awsview/10.9-data/</loc>
+    <loc>http://localhost:1313/aws-ws/10-awssecuview/10.9-data/</loc>
   </url><url>
-    <loc>http://localhost:1313/aws-ws/10-awsview/</loc>
+    <loc>http://localhost:1313/aws-ws/10-awssecuview/</loc>
   </url><url>
     <loc>http://localhost:1313/aws-ws/5-cloudquest/5.10-nosql/</loc>
   </url><url>
