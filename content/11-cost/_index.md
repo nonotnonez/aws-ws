@@ -135,15 +135,34 @@ pre : " <b> 11. </b> "
 
 |  |  | 
 |---|---|
-|![9](/aws-ws/images/11/1.png?featherlight=false&width=40pc)| ![9](/aws-ws/images/11/2.png?featherlight=false&width=40pc)|
+|![9][1] | ![9][2]|
 
 | Reduce Storage Costs |  | |
 |---|---| ---|
-|![9](/aws-ws/images/11/3.png?featherlight=false&width=40pc)| ![9](/aws-ws/images/11/4.png?featherlight=false&width=40pc)| ![9](/aws-ws/images/11/5.png?featherlight=false&width=40pc)|
-|![9](/aws-ws/images/11/6.png?featherlight=false&width=40pc)| ![9](/aws-ws/images/11/7.png?featherlight=false&width=40pc)| ![9](/aws-ws/images/11/8.png?featherlight=false&width=40pc)|
-|![9](/aws-ws/images/11/9.png?featherlight=false&width=40pc)| ![9](/aws-ws/images/11/10.png?featherlight=false&width=40pc)| ![9](/aws-ws/images/11/11.png?featherlight=false&width=40pc)|
+|![9][3] | ![9][4]| ![9][5]|
+|![9][6] | ![9][7]| ![9][8]|
+|![9][9] | ![9][10]| ![9][11]|
 
 | Tools to track cost and usage|  | |
 |---|---| ---|
-|![9](/aws-ws/images/11/12.png?featherlight=false&width=40pc)| ![9](/aws-ws/images/11/13.png?featherlight=false&width=40pc)| ![9](/aws-ws/images/11/14.png?featherlight=false&width=40pc)|
-|![9](/aws-ws/images/11/15.png?featherlight=false&width=40pc)| ![9](/aws-ws/images/11/16.png?featherlight=false&width=40pc)| |
+|![9][12] | ![9][13]| ![9][14]|
+|![9][15] | ![9][16]| 
+
+
+[1]: /aws-ws/images/11/1.png?featherlight=false&width=40pc
+[2]: /aws-ws/images/11/2.png?featherlight=false&width=40pc
+[3]: /aws-ws/images/11/3.png?featherlight=false&width=40pc
+[4]: /aws-ws/images/11/4.png?featherlight=false&width=40pc
+[5]: /aws-ws/images/11/5.png?featherlight=false&width=40pc
+[6]: /aws-ws/images/11/6.png?featherlight=false&width=40pc
+[7]: /aws-ws/images/11/7.png?featherlight=false&width=40pc
+[8]: /aws-ws/images/11/8.png?featherlight=false&width=40pc
+[9]: /aws-ws/images/11/9.png?featherlight=false&width=40pc
+[10]: /aws-ws/images/11/10.png?featherlight=false&width=40pc
+[11]: /aws-ws/images/11/11.png?featherlight=false&width=40pc
+[12]: /aws-ws/images/11/12.png?featherlight=false&width=40pc
+[13]: /aws-ws/images/11/13.png?featherlight=false&width=40pc
+[14]: /aws-ws/images/11/14.png?featherlight=false&width=40pc
+[15]: /aws-ws/images/11/15.png?featherlight=false&width=40pc
+[16]: /aws-ws/images/11/16.png?featherlight=false&width=40pc
+

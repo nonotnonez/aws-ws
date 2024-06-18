@@ -7,7 +7,24 @@ pre : " <b> 12.1 </b> "
 ---
 
 
-#### LAb
+#### AWS CloudFormation
+
+- A template is a JSON- or YAML-formatted text file
+
+![9](/aws-ws/images/12/1/10.png?featherlight=false&width=40pc)
+
+  - Resource:
+    - The resources section of the template describes the resource type, in this case the EC2 instance. 
+  - Properties:
+    - The property section describes properties such as the instance type, image ID, and the security group to use. 
+
+- **CloudFormation** can only perform actions that you have permission to do
+
+|  |  |  |
+|---|---| ---|
+|![121][1]| ![121][2]| ![121][3]|
+
+- **Demo**:
 
 - Cloudformation > Stacks 
   - Create stack
@@ -32,27 +49,8 @@ pre : " <b> 12.1 </b> "
 
 |  |  |  |
 |---|---| ---|
-|![121][11]| ![121][12]| ![121][13]|
-
-
-#### AWS CloudFormation
-
-- A template is a JSON- or YAML-formatted text file
-
-![9](/aws-ws/images/12/1/10.png?featherlight=false&width=40pc)
-
-  - Resource:
-    - The resources section of the template describes the resource type, in this case the EC2 instance. 
-  - Properties:
-    - The property section describes properties such as the instance type, image ID, and the security group to use. 
-
-- **CloudFormation** can only perform actions that you have permission to do
-
-
-
-|  |  |  |
-|---|---| ---|
-|![121][1]| ![121][2]| ![121][3]|
+|![121][11]| ![121][12]| 
+|![121][13]|
 
 
 [1]: /aws-ws/images/12/1/1.png?featherlight=false&width=40pc
@@ -64,9 +62,9 @@ pre : " <b> 12.1 </b> "
 [7]: /aws-ws/images/12/1/7.png?featherlight=false&width=40pc
 [8]: /aws-ws/images/12/1/8.png?featherlight=false&width=40pc
 [9]: /aws-ws/images/12/1/9.png?featherlight=false&width=40pc
-[10]: /aws-ws/images/12/1/10.png?featherlight=false&width=40pc
-[11]: /aws-ws/images/12/1/11.png?featherlight=false&width=40pc
-[12]: /aws-ws/images/12/1/12.png?featherlight=false&width=40pc
-[13]: /aws-ws/images/12/1/13.png?featherlight=false&width=40pc
-[14]: /aws-ws/images/12/1/14.png?featherlight=false&width=40pc
-[15]: /aws-ws/images/12/1/15.png?featherlight=false&width=40pc
+[10]: /aws-ws/images/12/1/10.png?featherlight=false&width=50pc
+[11]: /aws-ws/images/12/1/11.png?featherlight=false&width=50pc
+[12]: /aws-ws/images/12/1/12.png?featherlight=false&width=50pc
+[13]: /aws-ws/images/12/1/13.png?featherlight=false&width=50pc
+[14]: /aws-ws/images/12/1/14.png?featherlight=false&width=50pc
+[15]: /aws-ws/images/12/1/15.png?featherlight=false&width=50pc

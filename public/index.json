@@ -39,7 +39,7 @@
 	"title": "CloudFormation",
 	"tags": [],
 	"description": "",
-	"content": "AWS CloudFormation "
+	"content": "Demo Cloudformation \u0026gt; Stacks Create stack Prepare temple: Use a sample template Select: WorkPress blog Specify stack details Stack name: workpress-blog Parameters: DBName: workpressdb DBPassword: *** DBRootPassword: *** DBUser: *** InstanceType: t2.micro KeyName: SSHLocation: NEXT Configure stack options Perrmissions IAM role: (limit CF) NEXT SUBMIT AWS CloudFormation A template is a JSON- or YAML-formatted text file Resource:\nThe resources section of the template describes the resource type, in this case the EC2 instance. Properties:\nThe property section describes properties such as the instance type, image ID, and the security group to use. CloudFormation can only perform actions that you have permission to do\n"
 },
 {
 	"uri": "http://localhost:1313/aws-ws/8-devopsaws/8.1-commit/",
@@ -144,7 +144,7 @@
 	"title": "Lambda",
 	"tags": [],
 	"description": "",
-	"content": "Best practices "
+	"content": "Going serverless with Lambda AWS Lambda lets you run code without provisioning servers. "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/7-fcj/7.2-lambda/",
