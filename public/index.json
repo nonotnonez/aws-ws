@@ -39,7 +39,7 @@
 	"title": "CloudFormation",
 	"tags": [],
 	"description": "",
-	"content": "Demo Cloudformation \u0026gt; Stacks Create stack Prepare temple: Use a sample template Select: WorkPress blog Specify stack details Stack name: workpress-blog Parameters: DBName: workpressdb DBPassword: *** DBRootPassword: *** DBUser: *** InstanceType: t2.micro KeyName: SSHLocation: NEXT Configure stack options Perrmissions IAM role: (limit CF) NEXT SUBMIT AWS CloudFormation A template is a JSON- or YAML-formatted text file Resource:\nThe resources section of the template describes the resource type, in this case the EC2 instance. Properties:\nThe property section describes properties such as the instance type, image ID, and the security group to use. CloudFormation can only perform actions that you have permission to do\n"
+	"content": "AWS CloudFormation A template is a JSON- or YAML-formatted text file Resource:\nThe resources section of the template describes the resource type, in this case the EC2 instance. Properties:\nThe property section describes properties such as the instance type, image ID, and the security group to use. CloudFormation can only perform actions that you have permission to do\nDemo:\nCloudformation \u0026gt; Stacks\nCreate stack Prepare temple: Use a sample template Select: WorkPress blog Specify stack details Stack name: workpress-blog Parameters: DBName: workpressdb DBPassword: *** DBRootPassword: *** DBUser: *** InstanceType: t2.micro KeyName: SSHLocation: NEXT Configure stack options Perrmissions IAM role: (limit CF) NEXT SUBMIT "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/8-devopsaws/8.1-commit/",
@@ -144,7 +144,7 @@
 	"title": "Lambda",
 	"tags": [],
 	"description": "",
-	"content": "Going serverless with Lambda AWS Lambda lets you run code without provisioning servers. "
+	"content": "Going serverless with Lambda AWS Lambda lets you run code without provisioning servers. Lambda abstracts the underlying infratructure. Demo: AWS Services \u0026gt; Compute \u0026gt; Lambda \u0026gt; Create functions Blue/Green Buleprint name: Get S3 object Function name: retrieve-s3-data Runtime: Python Excution role: Create a new role: Role name: lambda-s3-iam-role Lambda funtion code: checking Workflow: The function has a handler (lambda_hander) that serves as the entry point. It extracts event data and contacts (context) paths to it. The function then extracts the bucket name (bucket) and the object key from the event data. It attempts to retrieve the object (get_object) from the specified bucket. If the retrieval is successful, the function prints the object\u0026rsquo;s content type. S3 trigger Bucket: s3/processing-bucket-1 Event types: PUT POST CREATE FUNCTION Check Code \u0026gt; Add 1 line \u0026gt; Deploy to Save the changes Check Trigger and start the code Upload files to Bucket and check Cloudwatch "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/7-fcj/7.2-lambda/",
@@ -221,7 +221,7 @@
 	"title": "Event-driven architecture",
 	"tags": [],
 	"description": "",
-	"content": "Best practices "
+	"content": "Event-driven architecture In an event-driven architecture, changes within the environment trigger code execution or initiation of workflows. Event-driven architecture creates loosely coupled, resilient, and scalable infrastructure. You can configure EventBridge to detect EC2 instance termination events. Upon detection, EventBridge can notify an SNS topic and trigger a Lambda function to launch a replacement instance You can configure EventBridge to detect S3 object upload events. Upon detection, EventBridge can trigger a Lambda function to process the uploaded object. "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.3-practice/",
