@@ -221,7 +221,7 @@
 	"title": "Event-driven architecture",
 	"tags": [],
 	"description": "",
-	"content": "Event-driven architecture In an event-driven architecture, changes within the environment trigger code execution or initiation of workflows. Event-driven architecture creates loosely coupled, resilient, and scalable infrastructure. You can configure EventBridge to detect EC2 instance termination events. Upon detection, EventBridge can notify an SNS topic and trigger a Lambda function to launch a replacement instance You can configure EventBridge to detect S3 object upload events. Upon detection, EventBridge can trigger a Lambda function to process the uploaded object. "
+	"content": "Event-driven architecture In an event-driven architecture, changes within the environment trigger code execution or initiation of workflows. Event-driven architecture creates loosely coupled, resilient, and scalable infrastructure. You can configure EventBridge to detect EC2 instance termination events. Upon detection, EventBridge can notify an SNS topic and trigger a Lambda function to launch a replacement instance\nYou can configure EventBridge to detect S3 object upload events. Upon detection, EventBridge can trigger a Lambda function to process the uploaded object.\nDemo\nAmazon EventBridge - Create rule\nDefine rule detail :\nName: process-s3-objects-with-lambda Event bus: default Rule type: Rule with an event pattern NEXT Build event pattern\nEvent source AWS events Sampe event - optional Event pattern AWS service S3 Event type: Amazon S3 Event Notification Event type specification 1 Specific event(s) Object Created Event type specification 2 Specific event(s) processing-bucket-1 Select target(s) Target 1 Target types Select a target: Lambda function Function: Do_nothing Target 2 Target types Select a target: SNS topic Topic : Topic1 NEXT Configure tags - NEXT - CREATE rule The rule has been created and it will be invoked each time an object is uploaded to the specified bucket. The rule will then forward the event to the configured targets, the Lambda function and the SNS topic. This rule is based on an event pattern.\nYou can also create a schedule rule. Let\u0026rsquo;s say we need to start an EC2 instance, which is a batch-processing server, at 11 p.m. every night and stop it the following morning at 6 a.m\nSchedules:\nSpecfify schedule detail Schedule name: Start_batch_server_11PM -\u0026gt; NEXT Select target All APIs - Amazone EC2 \u0026gt; Startinstances Provice instance IDs Settings Action after schedule completion: NONE DLQ - Retry policy: Turn off Retry Permissions - Select an existing role: EventBridge_EC2_Startinstance_Role NEXT - CREATE SCHEDULE "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.1-compute/5.1.3-practice/",
@@ -312,14 +312,14 @@
 	"title": "Step Functions",
 	"tags": [],
 	"description": "",
-	"content": "Best practices "
+	"content": "Orchestrating with Step Functions Orchestration involves coordinating and maintaining interconnected tasks to accomplish a specific workflow.\nIngestion -\u0026gt; Validation -\u0026gt; Transformation -\u0026gt; Storage AWS Step Functions is a serverless orchestration service.\nStep Functions allows you to coordinate the components of distributed applications and microservices using visual workflows\nUse Cases Demo AWS Step Functions \u0026gt; Get started Create your own - Drag and drop Actions: Lambda Invoke State name: Validate Payment Flow: Choice Actions: SNS Public State name: Send failed with retry link Search: Amazon DynamoDB - Updateitem State name: Update Inventory Actions: SNS Public State name: Notify shipping company Actions: Lambda Invoke State name: Generate invoice Actions: SNS Public State name: Send success email with invoice Flow: Success Flow: Fail "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/12-automate/12.5-sm/",
 	"title": "AWS System Manager",
 	"tags": [],
 	"description": "",
-	"content": "Best practices "
+	"content": "AWS Systems Manager AWS Systems Manager allows you to centeally view and manage resource in AWS and multicloud hybrid environments. Demo : Let\u0026rsquo;s execute a runbook that will enable versioning on S3 buckets System Manager - Automation - Excute automation Choose runbook : AWS-ConfigureS3BucketVersioning Execute automation runbook : Rate control Targets: Parameter: BucketName Targets: Tags Specify instance tag key: Environment Specify tag value (optional): Production ADD AutomationAssumeRole (no need with admin) EXCUTE "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/4-cleanup/4.2-jenkins/",
@@ -368,7 +368,7 @@
 	"title": "Auto Scalling",
 	"tags": [],
 	"description": "",
-	"content": "Best practices "
+	"content": "Auto Scaling AWS Auto Scaling automatically scales resource based on your scaling strategy "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/6-wsaudio/",
