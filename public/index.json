@@ -368,7 +368,7 @@
 	"title": "Auto Scalling",
 	"tags": [],
 	"description": "",
-	"content": "Auto Scaling AWS Auto Scaling automatically scales resource based on your scaling strategy "
+	"content": "Auto Scaling AWS Auto Scaling automatically scales resource based on your scaling strategy\nAmazon EC2 Auto Scaling can be used to scale EC2 instances.\nDemo AWS Auto Scaling - Create a scaling plan Find scalable resources: Choose a method: Search by tag Key: Environment Value: Production NEXT Specify scaling strategy Name: Scale-DynamoDB NEXT Configure advanced settings Check: Replace external scaling policies Uncheck: Disable scale-in NEXT CREATE SCALING PLAN Amazon EC2 Auto Scaling "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/6-wsaudio/",
@@ -501,7 +501,7 @@
 	"title": "Automate Infrastructure",
 	"tags": [],
 	"description": "",
-	"content": "Consider Automation "
+	"content": "Consider Automation Other Automation Tools ![131][13] "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.12-ha/",
