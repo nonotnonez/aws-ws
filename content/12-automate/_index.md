@@ -7,6 +7,29 @@ pre : " <b> 12. </b> "
 ---
 
 
+#### Chapter Quiz
+
+- What feature of Amazon EC2 Auto Scaling allows it to forecast capacity needs based on historical load data?
+  - Predictive scaling
+- Which AWS service can help achieve consistent deployment patterns by deploying infrastructure as code?
+  - AWS CloudFormation
+- Which AWS service automates the provisioning of preconfigured AWS accounts according to security and compliance requirements?
+  - AWS Control Tower
+- Which AWS service can help automate tasks such as patching for improved security?
+  - AWS Systems Manager
+- How are resources created from a CloudFormation template managed?
+  - as a single unit called a Stack
+- How does AWS Lambda help in reducing operational overhead?
+  - by abstracting server management tasks
+- Which AWS service is commonly used with Amazon EventBridge to trigger serverless functions in response to events?
+  - AWS Lambda
+- Which AWS service provides a graphical console to visualize workflows as a series of event-driven steps?
+  - AWS Step Functions
+- Which AWS service would you use to perform common maintenance, deployment, and remediation tasks?
+    - AWS Systems Manager
+- What type of scaling strategy/policy in Application Auto Scaling is based on the size of the CloudWatch alarm breach?
+  - Step scaling
+
 #### Consider Automation
 
 |  |  |  |

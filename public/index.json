@@ -42,6 +42,13 @@
 	"content": "AWS CloudFormation A template is a JSON- or YAML-formatted text file Resource:\nThe resources section of the template describes the resource type, in this case the EC2 instance. Properties:\nThe property section describes properties such as the instance type, image ID, and the security group to use. CloudFormation can only perform actions that you have permission to do\nDemo:\nCloudformation \u0026gt; Stacks\nCreate stack Prepare temple: Use a sample template Select: WorkPress blog Specify stack details Stack name: workpress-blog Parameters: DBName: workpressdb DBPassword: *** DBRootPassword: *** DBUser: *** InstanceType: t2.micro KeyName: SSHLocation: NEXT Configure stack options Perrmissions IAM role: (limit CF) NEXT SUBMIT "
 },
 {
+	"uri": "http://localhost:1313/aws-ws/14-perform/14.1-cw/",
+	"title": "CloudWatch",
+	"tags": [],
+	"description": "",
+	"content": "Elastic Load Balancing ELB "
+},
+{
 	"uri": "http://localhost:1313/aws-ws/8-devopsaws/8.1-commit/",
 	"title": "CodeCommit",
 	"tags": [],
@@ -501,7 +508,7 @@
 	"title": "Automate Infrastructure",
 	"tags": [],
 	"description": "",
-	"content": "Consider Automation Other Automation Tools ![131][13] "
+	"content": "Chapter Quiz What feature of Amazon EC2 Auto Scaling allows it to forecast capacity needs based on historical load data? Predictive scaling Which AWS service can help achieve consistent deployment patterns by deploying infrastructure as code? AWS CloudFormation Which AWS service automates the provisioning of preconfigured AWS accounts according to security and compliance requirements? AWS Control Tower Which AWS service can help automate tasks such as patching for improved security? AWS Systems Manager How are resources created from a CloudFormation template managed? as a single unit called a Stack How does AWS Lambda help in reducing operational overhead? by abstracting server management tasks Which AWS service is commonly used with Amazon EventBridge to trigger serverless functions in response to events? AWS Lambda Which AWS service provides a graphical console to visualize workflows as a series of event-driven steps? AWS Step Functions Which AWS service would you use to perform common maintenance, deployment, and remediation tasks? AWS Systems Manager What type of scaling strategy/policy in Application Auto Scaling is based on the size of the CloudWatch alarm breach? Step scaling Consider Automation Other Automation Tools "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/5-cloudquest/5.12-ha/",
@@ -522,7 +529,7 @@
 	"title": "Improve Performance",
 	"tags": [],
 	"description": "",
-	"content": "Best Practices "
+	"content": "Designing a strategy for improving performance Design for Performance "
 },
 {
 	"uri": "http://localhost:1313/aws-ws/15-ai/",
